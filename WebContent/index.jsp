@@ -13,7 +13,7 @@
 					<div class="col-xs-8">
 						<h1>
 							<json:data label="welcome" />
-							(From STRAPI)
+							(From STRAPI via REST)
 						</h1>
 
 						<json:object targetName="domain_teams">
@@ -46,6 +46,35 @@
 								</c:if>
 							</json:array>
 						</json:object>
+
+						<strapi:landingPages ID='1'>
+							<h2><strapi:landingPagesWelcome /> (From STRAPI via taglib)</h2>
+
+							<table class="table table-bordered table-striped table-hover table-datatable">
+								<tr>
+									<th>ID</th>
+									<th>Name</th>
+									<th>Description</th>
+									<th>Created At</th>
+									<th>Updated At</th>
+									<th>Published At</th>
+								</tr>
+								<strapi:foreachLandingPagesDomainTeamsLinks var="link" sortCriteria="domain_team_order">
+									<strapi:landingPagesDomainTeamsLinks>
+										<strapi:domainTeams ID="${tag_landingPagesDomainTeamsLinks.domainTeamId}">
+											<tr>
+												<td><strapi:domainTeamsID /></td>
+												<td><strapi:domainTeamsName /></td>
+												<td><strapi:domainTeamsDescription /></td>
+												<td><strapi:domainTeamsCreatedAt /></td>
+												<td><strapi:domainTeamsUpdatedAt /></td>
+												<td><strapi:domainTeamsPublishedAt /></td>
+											</tr>
+										</strapi:domainTeams>
+									</strapi:landingPagesDomainTeamsLinks>
+								</strapi:foreachLandingPagesDomainTeamsLinks>
+							</table>
+						</strapi:landingPages>
 
 						<h2>Dashboard List (From dashboard environment)</h2>
 						<table class="table table-bordered table-striped table-hover table-datatable">

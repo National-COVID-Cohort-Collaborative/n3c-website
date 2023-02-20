@@ -5,3 +5,4 @@
 <%@ taglib prefix="util" uri="http://icts.uiowa.edu/tagUtil"%>
 <%@ taglib prefix="json" uri="http://labs.cd2h.org/JSONTagLib"%>
 <%@ taglib prefix="dashboard" uri="http://icts.uiowa.edu/N3CDashboardTagLib"%>
+<%@ taglib prefix="strapi" uri="http://icts.uiowa.edu/STRAPITagLib"%>
