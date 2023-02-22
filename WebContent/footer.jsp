@@ -1,8 +1,61 @@
 <%@ include file="_include.jsp"%>
-<br>
-<br>
-<hr>
-<p class="text-center pr-0 pb-0 mb-1" style="font-size: 13px; font-weight: 300;">
-	Last updated:
-	<json:data label="updatedAt" />
-</p>
+<style>
+.footer-block {
+	color: #ffffff;
+	background-color: #3e6a7b;
+	padding-bottom: 10px;
+}
+
+.footer-block-centered {
+	text-align: center;
+	color: #ffffff;
+	background-color: #3e6a7b;
+	padding-bottom: 10px;
+}
+
+.footer-social {
+	color: #ffffff;
+	background-color: #142b52;
+	padding-bottom: 10px;
+}
+
+.footer-hr {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: 0;
+	border-top: 1px solid #ffff;
+}
+</style>
+
+<div class="container-fluid">
+	<strapi:footers ID="1">
+		<div class="row footer-block">
+			<div class="col-xs-12 col-md-3">
+				<strapi:files ID="51">
+					<img alt="" src="http://dora.info-science.uiowa.edu:1337<strapi:filesUrl/>" style="padding:20px; max-width:250px; margin:auto; align-self:flex-start;">
+				</strapi:files>
+			</div>
+			<div class="col-xs-12 col-md-9">
+				<util:markdown2html><strapi:footersGrantCite /></util:markdown2html>
+			</div>
+			<hr class="footer-hr">
+		</div>
+		<div class="row footer-block-centered">
+			<util:markdown2html><strapi:footersCredits /></util:markdown2html>
+			<hr>
+		</div>
+		<div class="row footer-block">
+			<util:markdown2html><strapi:footersSignup /></util:markdown2html>
+		</div>
+		<div class="row footer-social">
+			<util:markdown2html><strapi:footersSocial /></util:markdown2html>
+			<ul class="list-inline">
+				<li><a href="mailto:cd2h@ohsu.edu"> <i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+				<li><a href="https://twitter.com/data2health?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"> <i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+				<li><a href="https://join.slack.com/t/cd2h/signup"> <i class="fa fa-slack" aria-hidden="true"></i></a></li>
+				<li><a href="https://github.com/data2health"> <i class="fa fa-github" aria-hidden="true"></i></a></li>
+			</ul>
+
+		</diV>
+	</strapi:footers>
+</div>
