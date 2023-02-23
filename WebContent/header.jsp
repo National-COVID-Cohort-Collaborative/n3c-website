@@ -128,7 +128,8 @@
 					<a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a>
 					<div class="dropdown-divider"></div>
 					<a class="dropdown-item" href="#">Something else here</a>
-				</div></li>
+				</div>
+			</li>
 			<li class="nav-item"><a class="nav-link disabled" href="#">Disabled</a></li>
 		</ul>
 		<form class="form-inline my-2 my-lg-0">
