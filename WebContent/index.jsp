@@ -7,10 +7,7 @@
 			<div class="container-fluid">
 				<jsp:include page="header.jsp" />
 				<div class="row flex-nowrap">
-					<div class="col-xs-4">
-						<%@ include file="menu.jsp"%>
-					</div>
-					<div class="col-xs-8">
+					<div class="col-xs-12">
 						<h1>
 							<json:data label="welcome" />
 							(From STRAPI via REST)
@@ -106,7 +103,7 @@
 					</div>
 				</div>
 			</div>
-			<%@ include file="footer.jsp"%>
+			<jsp:include page="footer.jsp" />
 		</json:object>
 	</json:object>
 </body>
