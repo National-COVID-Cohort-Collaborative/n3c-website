@@ -1,6 +1,6 @@
 <%@ include file="../_include.jsp"%>
 
-<strapi:navBars ID="1">
+<strapi:navBars ID="${param.navbar}">
 	<nav class="navbar navbar-expand-lg">
 		<a class="navbar-brand" href="#"><img src="/n3c-dashboard-admin/images/n3c_logo.png" height=50px><strapi:navBarsName/></a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -9,13 +9,13 @@
 	
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav mr-auto">
-				<strapi:foreachNavColumnsNavBarLinks var="column">
+				<strapi:foreachNavColumnsNavBarLinks var="column" sortCriteria="nav_column_order">
 					<strapi:navColumnsNavBarLinks>
 						<strapi:navColumns ID="${tag_navColumnsNavBarLinks.navColumnId}">
 							<c:choose>
 								<c:when test="${strapi:navColumnsHasNavItemsNavColumnLinks(tag_navColumnsNavBarLinks.navColumnId) }">
 									<li class="nav-item dropdown">
-										<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <strapi:navColumnsLabel/> </a>
+										<a class="nav-link dropdown-toggle" href="<strapi:navColumnsUrl/>" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <strapi:navColumnsLabel/> </a>
 										<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 											<strapi:foreachNavItemsNavColumnLinks var="item" sortCriteria="nav_item_order">
 												<strapi:navItemsNavColumnLinks>
@@ -28,7 +28,7 @@
 									</li>
 								</c:when>
 								<c:otherwise>
-									<li class="nav-item active"><a class="nav-link" href="#"><strapi:navColumnsLabel/></a></li>					
+									<li class="nav-item active"><a class="nav-link" href="<strapi:navColumnsUrl/>"><strapi:navColumnsLabel/></a></li>			
 								</c:otherwise>
 							</c:choose>
 						</strapi:navColumns>

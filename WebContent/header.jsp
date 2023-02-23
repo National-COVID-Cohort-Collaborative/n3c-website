@@ -116,4 +116,6 @@
   </ul>
 </div>
 
-<jsp:include page="nav-bars/dynamic.jsp"/>
+<jsp:include page="nav-bars/dynamic.jsp">
+	<jsp:param name="navbar" value="1"/>
+</jsp:include>
