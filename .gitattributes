@@ -13,12 +13,15 @@
 WebContent/META-INF/MANIFEST.MF -text
 WebContent/WEB-INF/web.xml -text
 WebContent/_include.jsp -text
+WebContent/bio/headshot.jsp -text
+WebContent/bio/thumbnail.jsp -text
 WebContent/branding.jsp -text
 WebContent/dashboard/displayDashboardThumbnail.jsp -text
 WebContent/footer.jsp -text
 WebContent/head.jsp -text
 WebContent/header.jsp -text
 WebContent/index.jsp -text
+WebContent/leadership.jsp -text
 WebContent/menu.jsp -text
 WebContent/nav-bars/dynamic.jsp -text
 WebContent/nav-bars/sample.jsp -text
