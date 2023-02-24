@@ -102,6 +102,11 @@
 
 					</div>
 				</div>
+				<div class="row flex-nowrap">
+					<div class="col-xs-12">
+						<c:import url="http://localhost:8080/n3c-dashboard/external/spotlight.jsp"/>
+					</div>
+				</div>
 			</div>
 			<jsp:include page="footer.jsp" />
 		</json:object>
