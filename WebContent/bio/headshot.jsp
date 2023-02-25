@@ -1,12 +1,13 @@
 <%@ include file="../_include.jsp"%>
 
+<%-- STRAPI doesn't always populate the formats field, hence the coalesce --%>
 <sql:query var="media" dataSource="jdbc/STRAPITagLib">
 	select
 		url,
-		((formats->>'large')::jsonb)->>'url' as large,
-		((formats->>'small')::jsonb)->>'url' as small,
-		((formats->>'medium')::jsonb)->>'url' as medium,
-		((formats->>'thumbnail')::jsonb)->>'url' as thumbnail
+		coalesce(((formats->>'large')::jsonb)->>'url', url) as large,
+		coalesce(((formats->>'small')::jsonb)->>'url', url) as small,
+		coalesce(((formats->>'medium')::jsonb)->>'url', url) as medium,
+		coalesce(((formats->>'thumbnail')::jsonb)->>'url', url) as thumbnail
 	from
 		strapi.files,
 		strapi.files_related_morphs
