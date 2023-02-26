@@ -7,7 +7,7 @@
 	
         <script	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
          <!-- bootstrap CSS -->
-		<link href="resources/bootstrap/css/bootstrap.css" rel="stylesheet" >
+		<link href="/n3c-website/resources/bootstrap/css/bootstrap.css" rel="stylesheet" >
         <link rel="stylesheet" id='font-awesome' href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
         
         <link rel="stylesheet" type="text/css" href="/n3c-dashboard-admin/resources/DataTables/css/jquery.dataTables.min.css">
@@ -18,7 +18,7 @@
         </style>
         
         <!-- bootstrap Latest compiled JavaScript -->
-		<script type='text/javascript' src='resources/bootstrap/js/bootstrap.bundle.min.js '></script>
+		<script type='text/javascript' src='/n3c-website/resources/bootstrap/js/bootstrap.bundle.min.js '></script>
 	
         <style type="text/css">
         table.dataTable thead .sorting_asc {

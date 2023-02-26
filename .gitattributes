@@ -15,8 +15,11 @@ WebContent/WEB-INF/web.xml -text
 WebContent/_include.jsp -text
 WebContent/bio/headshot.jsp -text
 WebContent/bio/thumbnail.jsp -text
+WebContent/blocks/admin_stats.jsp -text
+WebContent/blocks/ehr_stats.jsp -text
 WebContent/branding.jsp -text
 WebContent/dashboard/displayDashboardThumbnail.jsp -text
+WebContent/faqs/turndown.jsp -text
 WebContent/footer.jsp -text
 WebContent/head.jsp -text
 WebContent/header.jsp -text
@@ -26,6 +29,9 @@ WebContent/menu.jsp -text
 WebContent/nav-bars/dynamic.jsp -text
 WebContent/nav-bars/sample.jsp -text
 WebContent/nav.jsp -text
+WebContent/phastr/index.jsp -text
+WebContent/phastr/question.jsp -text
+WebContent/phastr/tile.jsp -text
 WebContent/resources/DataTables/css/dataTables.bootstrap.css -text
 WebContent/resources/DataTables/css/dataTables.bootstrap.min.css -text
 WebContent/resources/DataTables/css/dataTables.bootstrap4.css -text
@@ -91,6 +97,8 @@ WebContent/resources/bootstrap/js/bootstrap.js -text
 WebContent/resources/bootstrap/js/bootstrap.js.map -text
 WebContent/resources/bootstrap/js/bootstrap.min.js -text
 WebContent/resources/bootstrap/js/bootstrap.min.js.map -text
+WebContent/resources/countUp.min.js -text
+WebContent/resources/countup.js -text
 WebContent/resources/d3.v4.min.js -text
 WebContent/resources/images/logo.png -text
 WebContent/resources/main_style.css -text
