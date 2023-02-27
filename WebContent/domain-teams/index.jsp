@@ -6,8 +6,28 @@
 		<jsp:include page="../header.jsp" />
 		<strapi:domains ID="1">
 			<h1>N3C Domain Teams</h1>
-			<util:markdown2html><strapi:domainsBlock1 /></util:markdown2html>
-			<util:markdown2html><strapi:domainsBlock2 /></util:markdown2html>
+			<div class="row flex-nowrap">
+				<div class="col-xs-5">
+					<jsp:include page="../files/image.jsp">
+						<jsp:param value="329" name="id" />
+						<jsp:param value="small" name="format" />
+					</jsp:include>
+				</div>
+				<div class="col-xs-7">
+					<util:markdown2html><strapi:domainsBlock1 /></util:markdown2html>
+				</div>
+			</div>
+			<div class="row flex-nowrap">
+				<div class="col-xs-7">
+					<util:markdown2html><strapi:domainsBlock2 /></util:markdown2html>
+				</div>
+				<div class="col-xs-5">
+					<jsp:include page="../youtube/video.jsp">
+						<jsp:param value="2" name="id" />
+					</jsp:include>
+				</div>
+			</div>
+
 			<h2>Domain Teams</h2>
 			<div class="row flex-wrap">
 				<strapi:foreachDomainsDomainTeamsLinks var="domains" sortCriteria="domain_team_order">
@@ -20,6 +40,20 @@
 						</strapi:domainTeams>
 					</strapi:domainsDomainTeamsLinks>
 				</strapi:foreachDomainsDomainTeamsLinks>
+			</div>
+
+			<h2>Cross Cutting Teams</h2>
+			<div class="row flex-wrap">
+				<strapi:foreachDomainsCrossCuttingTeamsLinks var="domains" sortCriteria="domain_team_order">
+					<strapi:domainsCrossCuttingTeamsLinks>
+						<strapi:domainTeams ID="${tag_domainsCrossCuttingTeamsLinks.domainTeamId}">
+							<div class="col col-4">
+								<h3><strapi:domainTeamsName /></h3>
+								<util:markdown2html><strapi:domainTeamsSummary/></util:markdown2html>
+							</div>
+						</strapi:domainTeams>
+					</strapi:domainsCrossCuttingTeamsLinks>
+				</strapi:foreachDomainsCrossCuttingTeamsLinks>
 			</div>
 		</strapi:domains>
 	</div>

@@ -19,6 +19,7 @@ WebContent/about/logo.jsp -text
 WebContent/about/misson.jsp -text
 WebContent/about/news.jsp -text
 WebContent/about/news_logo.jsp -text
+WebContent/about/presentations.jsp -text
 WebContent/bio/headshot.jsp -text
 WebContent/bio/thumbnail.jsp -text
 WebContent/blocks/admin_stats.jsp -text
