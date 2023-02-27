@@ -1,11 +1,11 @@
-<%@ include file="_include.jsp"%>
+<%@ include file="../_include.jsp"%>
 <html>
-<jsp:include page="head.jsp" />
+<jsp:include page="../head.jsp" />
 <body>
 	<json:object sourceURL="http://dora.info-science.uiowa.edu:1337/api/landing-page?populate=*" targetName="data">
 		<json:object targetName="attributes">
 			<div class="container-fluid">
-				<jsp:include page="header.jsp" />
+				<jsp:include page="../header.jsp" />
 				<div class="row flex-nowrap">
 					<div class="col-xs-12">
 						<strapi:leaderships ID="1">
@@ -16,7 +16,7 @@
 										<div class="row flex-nowrap">
 											<strapi:foreachBiosBioGroupsLinks var="bio" sortCriteria="bio_order">
 												<strapi:biosBioGroupsLinks>
-													<jsp:include page="bio/thumbnail.jsp">
+													<jsp:include page="../bio/thumbnail.jsp">
 														<jsp:param name="id" value="${tag_biosBioGroupsLinks.bioId}"/>
 													</jsp:include>
 												</strapi:biosBioGroupsLinks>
@@ -29,7 +29,7 @@
 					</div>
 				</div>
 			</div>
-			<jsp:include page="footer.jsp" />
+			<jsp:include page="../footer.jsp" />
 		</json:object>
 	</json:object>
 </body>
