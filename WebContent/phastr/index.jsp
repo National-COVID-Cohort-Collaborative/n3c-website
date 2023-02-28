@@ -68,13 +68,16 @@
 					<util:markdown2html><strapi:phastrsQuickStart /></util:markdown2html>
 					<hr>
 					<a id="faqs"></a><h3>FAQs</h3>
-					<strapi:foreachPhastrsFaqsLinks var="faqs" sortCriteria="faq_order">
-						<strapi:phastrsFaqsLinks>
-							<jsp:include page="../faqs/turndown.jsp">
-								<jsp:param value="${tag_phastrsFaqsLinks.faqId}" name="id"/>
-							</jsp:include>
-						</strapi:phastrsFaqsLinks>
-					</strapi:foreachPhastrsFaqsLinks>
+					<div class="accordion" id="faqAccordian">
+						<strapi:foreachPhastrsFaqsLinks var="faqs" sortCriteria="faq_order">
+							<strapi:phastrsFaqsLinks>
+								<jsp:include page="../faqs/turndown.jsp">
+									<jsp:param value="${tag_phastrsFaqsLinks.faqId}" name="id" />
+									<jsp:param value="${Double.valueOf(tag_phastrsFaqsLinks.faqOrder).intValue()}" name="pos" />
+								</jsp:include>
+							</strapi:phastrsFaqsLinks>
+						</strapi:foreachPhastrsFaqsLinks>
+					</div>
 				</strapi:phastrs>
 			</div>
 		</div>

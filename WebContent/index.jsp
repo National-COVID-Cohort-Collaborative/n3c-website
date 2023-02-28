@@ -6,6 +6,12 @@
 		<jsp:include page="header.jsp" />
 		<div class="row flex-nowrap">
 			<div class="col-xs-12">
+				<div class="col-xs-8" style="text-align: center;">
+					<jsp:include page="files/image.jsp">
+						<jsp:param value="326" name="id" />
+						<jsp:param value="medium" name="format" />
+					</jsp:include>
+				</div>
 				<strapi:landingPages ID='1'>
 					<h2><strapi:landingPagesWelcome /> (From STRAPI via taglib)</h2>
 
