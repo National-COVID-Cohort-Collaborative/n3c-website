@@ -34,7 +34,7 @@
 					<strapi:domainsDomainTeamsLinks>
 						<strapi:domainTeams ID="${tag_domainsDomainTeamsLinks.domainTeamId}">
 							<div class="col col-4">
-								<h3><a href="<strapi:domainTeamsID/>"><strapi:domainTeamsName /></a></h3>
+								<h3><a href="team.jsp?id=<strapi:domainTeamsID/>"><strapi:domainTeamsName /></a></h3>
 								<util:markdown2html><strapi:domainTeamsSummary/></util:markdown2html>
 							</div>
 						</strapi:domainTeams>

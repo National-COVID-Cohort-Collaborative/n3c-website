@@ -27,6 +27,7 @@ WebContent/blocks/ehr_stats.jsp -text
 WebContent/branding.jsp -text
 WebContent/dashboard/displayDashboardThumbnail.jsp -text
 WebContent/domain-teams/index.jsp -text
+WebContent/domain-teams/team.jsp -text
 WebContent/faqs/turndown.jsp -text
 WebContent/files/image.jsp -text
 WebContent/files/related_image.jsp -text
