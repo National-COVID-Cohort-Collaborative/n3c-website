@@ -1,4 +1,5 @@
 <div class="row counts" style="display: flex; margin: auto; width: 100%; padding: 10px; flex-wrap: wrap; text-align: center;">
+	<h2>Patient Stats</h2>
 	<div class="row" style="width: 100%; overflow: hidden; font-size: 18px; margin: auto;">
 		<div class="col-xs-12 col-sm-6 col-md-3 abt-count">
 			<h2 style="padding-top: 15px;">
@@ -35,11 +36,10 @@
 	</div>
 </div>
 
-<script type="text/javascript" src="/resources/countUp.min.js?v=1.9.3"></script>
-<script src="/core/assets/vendor/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="/n3c-website/resources/countUp.min.js?v=1.9.3"></script>
 <script>
 
-	$.getJSON("https://labs.cd2h.org/n3c_dashboard/embedded_enclave_metrics.jsp", function(json){
+	$.getJSON("https://covid.cd2h.org/dashboard/feeds/embedded_enclave_metrics.jsp", function(json){
 		var data = $.parseJSON(JSON.stringify(json));
 
 		$('#rows_top').text(data['total_rows']['value']); 		

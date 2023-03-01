@@ -1,6 +1,6 @@
 <div class="content-about plugin-content" id="content-stats">
-	<div class="row counts"
-		style="display: flex; margin-top: 0px; padding: 10px; padding-bottom: 30px; flex-wrap: wrap; border: 2px solid #bccfd6; background: #f1f4f5; margin-left: 0px; margin-right: 0px; text-align: center;">
+	<div class="row counts"	style="display: flex; margin-top: 0px; padding: 10px; padding-bottom: 30px; flex-wrap: wrap; border: 2px solid #bccfd6; background: #f1f4f5; margin-left: 0px; margin-right: 0px; text-align: center;">
+	<h2>Enclave Stats</h2>
 		<div class="row" style="width: 100%; overflow: hidden; font-size: 18px;">
 			<div class="col-xs-12 col-sm-6 col-md-3 abt-count">
 				<h2 style="padding-top: 15px;">
@@ -46,9 +46,9 @@
 	</div>
 </div>
 
-<script type="text/javascript" src="/resources/countUp.min.js?v=1.9.3"></script>
+<script type="text/javascript" src="/n3c-website/resources/countUp.min.js?v=1.9.3"></script>
 <script>
-	$.getJSON("https://labs.cd2h.org/n3c_dashboard/embedded_people_metrics.jsp", function(json){
+	$.getJSON("https://covid.cd2h.org/dashboard/feeds/embedded_people_metrics.jsp", function(json){
 		var data = $.parseJSON(JSON.stringify(json));
 
 		$('#duas').text(data['number_duas']); 

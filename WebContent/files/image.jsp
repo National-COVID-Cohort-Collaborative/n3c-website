@@ -16,19 +16,19 @@
 <c:forEach items="${media.rows}" var="row" varStatus="rowCounter">
 	<c:choose>
 		<c:when test="${param.format == 'large' }">
-			<img src="http://dora.info-science.uiowa.edu:1337${row.large}"/>
+			<img class="${param.clss}" src="http://dora.info-science.uiowa.edu:1337${row.large}"/>
 		</c:when>
 		<c:when test="${param.format == 'small' }">
-			<img src="http://dora.info-science.uiowa.edu:1337${row.small}"/>
+			<img class="${param.clss}" src="http://dora.info-science.uiowa.edu:1337${row.small}"/>
 		</c:when>
 		<c:when test="${param.format == 'medium' }">
-			<img src="http://dora.info-science.uiowa.edu:1337${row.medium}"/>
+			<img class="${param.clss}" src="http://dora.info-science.uiowa.edu:1337${row.medium}"/>
 		</c:when>
 		<c:when test="${param.format == 'thumbnail' }">
-			<img src="http://dora.info-science.uiowa.edu:1337${row.thumbnail}"/>
+			<img class="${param.clss}" src="http://dora.info-science.uiowa.edu:1337${row.thumbnail}"/>
 		</c:when>
 		<c:otherwise>
-			<img src="http://dora.info-science.uiowa.edu:1337${row.url}"/>
+			<img class="${param.clss}" src="http://dora.info-science.uiowa.edu:1337${row.url}"/>
 		</c:otherwise>
 	</c:choose>
 	${row.jsonb_pretty}
