@@ -20,6 +20,11 @@
         <!-- bootstrap Latest compiled JavaScript -->
 		<script type='text/javascript' src='/n3c-website/resources/bootstrap/js/bootstrap.bundle.min.js '></script>
 	
+ 	<!-- Slick library -->
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+ 
         <style type="text/css">
         table.dataTable thead .sorting_asc {
             background-image: none !important;

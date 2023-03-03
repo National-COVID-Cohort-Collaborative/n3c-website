@@ -26,6 +26,8 @@ WebContent/blocks/admin_stats.jsp -text
 WebContent/blocks/ehr_stats.jsp -text
 WebContent/branding.jsp -text
 WebContent/dashboard/displayDashboardThumbnail.jsp -text
+WebContent/dashboard/displayDashboardTile.jsp -text
+WebContent/dashboard/spotlight.jsp -text
 WebContent/domain-teams/index.jsp -text
 WebContent/domain-teams/team.jsp -text
 WebContent/faqs/turndown.jsp -text

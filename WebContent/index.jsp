@@ -15,6 +15,16 @@
 .carousel-control-prev-icon {
 	color: #000;
 	background-color: #000;
+.dashboard_main{
+	background: rgba(100,42,107,1);
+	/* add other backgrounds here */
+	background: linear-gradient(to top,rgba(255,255,255,1) 7%,rgba(255,255,255,0) 99%), linear-gradient(to right,#08354bff 0%, #0b4a69ff 47%, #0a405a8c 100%);
+    margin-top: 20px;
+    padding-bottom: 50px;
+    padding-top: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
 }
 
 </style>
@@ -55,9 +65,12 @@
 			</div>
 		</div>
 
-		<div class="row flex-nowrap">
+		<div class="dashboard_main row flex-nowrap">
 			<div class="col-xs-4">
-				<h3>hive</h3>
+<jsp:include page="files/image.jsp">
+	<jsp:param name="id" value="371" />
+	<jsp:param name="format" value="small" />
+</jsp:include>
 			</div>
 			<div class="col">
 				<jsp:include page="blocks/ehr_stats.jsp" />
@@ -65,8 +78,8 @@
 			</div>
 		</div>
 		<div class="row flex-nowrap">
-			<div class="col-xs-12">
-				<c:import url="http://localhost:8080/n3c-dashboard/external/spotlight.jsp"/>
+			<div class="col-12">
+				<jsp:include page="dashboard/spotlight.jsp" />
 			</div>
 		</div>
 	</div>

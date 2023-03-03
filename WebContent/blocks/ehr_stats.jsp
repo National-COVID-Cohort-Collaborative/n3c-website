@@ -1,4 +1,5 @@
-<div class="row counts" style="display: flex; margin: auto; width: 100%; padding: 10px; flex-wrap: wrap; text-align: center;">
+<div class="content-about plugin-content" id="content-stats">
+	<div class="row counts"	style="display: flex; margin-top: 0px; padding: 10px; padding-bottom: 30px; flex-wrap: wrap; border: 2px solid #bccfd6; background: #f1f4f5; margin-left: 0px; margin-right: 0px; text-align: center;">
 	<h2>Patient Stats</h2>
 	<div class="row" style="width: 100%; overflow: hidden; font-size: 18px; margin: auto;">
 		<div class="col-xs-12 col-sm-6 col-md-3 abt-count">
@@ -34,6 +35,7 @@
 		</div>
 
 	</div>
+</div>
 </div>
 
 <script type="text/javascript" src="/n3c-website/resources/countUp.min.js?v=1.9.3"></script>
