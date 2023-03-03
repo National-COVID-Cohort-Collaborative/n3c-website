@@ -1,30 +1,30 @@
 <div class="content-about plugin-content" id="content-stats">
-	<div class="row counts"	style="display: flex; margin-top: 0px; padding: 10px; padding-bottom: 30px; flex-wrap: wrap; border: 2px solid #bccfd6; background: #f1f4f5; margin-left: 0px; margin-right: 0px; text-align: center;">
+	<div class="row counts"	style="display: flex; margin-top: 0px; padding: 5px; padding-bottom: 5px; flex-wrap: wrap; border: 2px solid #bccfd6; background: #f1f4f5; margin-left: 0px; margin-right: 0px; text-align: center;">
 	<h2>Enclave Stats</h2>
 		<div class="row" style="width: 100%; overflow: hidden; font-size: 18px;">
 			<div class="col-xs-12 col-sm-6 col-md-3 abt-count">
-				<h2 style="padding-top: 15px;">
+				<h2 style="padding-top: 5px;">
 					<span id="dtas">0</span>
 				</h2>
 
 				<p style="font-style: italic;">
-					<a href="https://ncats.nih.gov/n3c/resources/data-contribution/data-transfer-agreement-signatories" style="color: #142b52; font-weight: 400;" target="_blank">Executed DTAs <i
+					<a href="https://ncats.nih.gov/n3c/resources/data-contribution/data-transfer-agreement-signatories" style="color: #142b52; font-weight: 400;" target="_blank">Sites Contributing Data <i
 						aria-hidden="true" class="fa fa-external-link" style="color: #142b52; font-weight: 400; font-size: 18px;">&nbsp;</i></a>
 				</p>
 			</div>
 
 			<div class="col-xs-12 col-sm-6 col-md-3 abt-count">
-				<h2 style="padding-top: 15px;">
+				<h2 style="padding-top: 5px;">
 					<span id="duas">0</span>
 				</h2>
 
 				<p style="font-style: italic;">
-					<a href="/duas" style="color: #142b52; font-weight: 400;">Executed DUAs <i aria-hidden="true" class="fa fa-external-link" style="color: #142b52; font-weight: 400; font-size: 18px;">&nbsp;</i></a>
+					<a href="/duas" style="color: #142b52; font-weight: 400;">Researcher Organizations <i aria-hidden="true" class="fa fa-external-link" style="color: #142b52; font-weight: 400; font-size: 18px;">&nbsp;</i></a>
 				</p>
 			</div>
 
 			<div class="col-xs-12 col-sm-6 col-md-3 abt-count">
-				<h2 style="padding-top: 15px;">
+				<h2 style="padding-top: 5px;">
 					<span id="proj">0</span>
 				</h2>
 
@@ -34,7 +34,7 @@
 			</div>
 
 			<div class="col-xs-12 col-sm-6 col-md-3 abt-count">
-				<h2 style="padding-top: 15px;">
+				<h2 style="padding-top: 5px;">
 					<span id="dt">0</span>
 				</h2>
 
