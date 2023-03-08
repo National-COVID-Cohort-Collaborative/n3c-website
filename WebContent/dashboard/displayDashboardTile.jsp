@@ -5,7 +5,7 @@
 
 <dashboard:dashboard did="${param.did}">
 	<div class="col-12 col-md-6 col-lg-4 d-flex">
-		<div class="card hover-card_noshadow mb-2" onclick="location.href='/n3c-dashboard/<dashboard:dashboardPath/>';">
+		<div class="card hover-card_noshadow mb-2" onclick="location.href='/dashboard/<dashboard:dashboardPath/>';">
 			<img src="<util:applicationRoot/>/dashboard/displayDashboardThumbnail.jsp?did=<dashboard:dashboardDid/>" class="card-img-top" alt="...">
 			<div class="card-body card-body-links">
 				<p class="card-title">
@@ -14,7 +14,7 @@
 				<dashboard:dashboardBlurb />
 				<div class='row card-link'>
 					<div class="col col-6">
-						<a href='/n3c-dashboard/<dashboard:dashboardPath/>'>Explore&#8196;<i class="fas fa-angle-right"></i></a>
+						<a href='/dashboard/<dashboard:dashboardPath/>'>Explore&#8196;<i class="fas fa-angle-right"></i></a>
 					</div>
 						<div class="col col-6">
 					<c:if test="${dashboard:dashboardHasTopic(param.did)}">
@@ -24,7 +24,7 @@
 								<br>
 							</c:if>
 							<dashboard:topic>
-								<a href='/n3c-dashboard/<dashboard:topicPath/>'><dashboard:topicTitle/></a> 							
+								<a href='/dashboard/<dashboard:topicPath/>'><dashboard:topicTitle/></a> 							
 							</dashboard:topic>
 						</dashboard:foreachTopic>
 							">Topics&#8196;<i class="fas fa-bars"></i></a>
