@@ -25,6 +25,7 @@ WebContent/bio/thumbnail.jsp -text
 WebContent/blocks/admin_stats.jsp -text
 WebContent/blocks/ehr_stats.jsp -text
 WebContent/branding.jsp -text
+WebContent/contributors/index.jsp -text
 WebContent/dashboard/displayDashboardThumbnail.jsp -text
 WebContent/dashboard/displayDashboardTile.jsp -text
 WebContent/dashboard/spotlight.jsp -text
@@ -34,12 +35,14 @@ WebContent/faqs/turndown.jsp -text
 WebContent/files/image.jsp -text
 WebContent/files/related_image.jsp -text
 WebContent/footer.jsp -text
+WebContent/forum/index.jsp -text
 WebContent/head.jsp -text
 WebContent/header.jsp -text
 WebContent/index.jsp -text
 WebContent/nav-bars/dynamic.jsp -text
 WebContent/nav-bars/sample.jsp -text
 WebContent/nav.jsp -text
+WebContent/newsletter/index.jsp -text
 WebContent/phastr/index.jsp -text
 WebContent/phastr/question.jsp -text
 WebContent/phastr/tile.jsp -text
@@ -188,5 +191,6 @@ WebContent/resources/tinymce/themes/mobile/theme.min.js -text
 WebContent/resources/tinymce/themes/silver/theme.min.js -text
 WebContent/resources/tinymce/tinymce.d.ts -text
 WebContent/resources/tinymce/tinymce.min.js -text
+WebContent/workstreams/index.jsp -text
 WebContent/youtube/video.jsp -text
 /pom.xml -text
