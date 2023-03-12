@@ -8,9 +8,7 @@
 			<div class="col-xs-8">
 				<strapi:workstreams ID="1">
 					<h1><strapi:workstreamsHeader /></h1>
-					<util:markdown2html>
-						<strapi:workstreamsBlock1 />
-					</util:markdown2html>
+					<util:markdown2html><strapi:workstreamsBlock1 /></util:markdown2html>
 					<strapi:foreachWorkstreamsIntroLinks var="x">
 						<strapi:workstreamsIntroLinks>
 							<strapi:contentImageBlockRights ID="${tag_workstreamsIntroLinks.contentImageBlockRightId}">
@@ -34,25 +32,22 @@
 						</strapi:workstreamsYouTubeVideoLinks>
 					</strapi:foreachWorkstreamsYouTubeVideoLinks>
 					<util:markdown2html><strapi:workstreamsBlock3/></util:markdown2html>
-					<h2>Workstreams</h2>
-					<sql:query var="media" dataSource="jdbc/STRAPITagLib">
-						select
-							url,
-							coalesce(((formats->>'large')::jsonb)->>'url', url) as large,
-							coalesce(((formats->>'small')::jsonb)->>'url', url) as small,
-							coalesce(((formats->>'medium')::jsonb)->>'url', url) as medium,
-							coalesce(((formats->>'thumbnail')::jsonb)->>'url', url) as thumbnail
-						from
-							strapi.files,
-							strapi.files_related_morphs
-						where files.id=files_related_morphs.file_id
-						  and related_type = 'api::workstream.workstream'
-						  and field = 'icons'
-						  and related_id = 1
-					</sql:query>
-					<c:forEach items="${media.rows}" var="row" varStatus="rowCounter">
-						<img src="http://dora.info-science.uiowa.edu:1337${row.thumbnail}" />
-					</c:forEach>
+
+						<div class="row flex-nowrap">
+							<div class="col-xs-12">
+								<h2>Workstreams</h2>
+							</div>
+						</div>
+						<div class="row flex-nowrap">
+							<strapi:foreachWorkstreamsNavTilesLinks var="x">
+								<strapi:workstreamsNavTilesLinks>
+									<jsp:include page="../blocks/nav_tile_no_text.jsp">
+										<jsp:param value="${tag_workstreamsNavTilesLinks.navTileId}" name="id" />
+									</jsp:include>
+								</strapi:workstreamsNavTilesLinks>
+							</strapi:foreachWorkstreamsNavTilesLinks>
+						</div>
+
 					<h2>Events</h2>
 					<strapi:workstreamsEvents/>
 				</strapi:workstreams>

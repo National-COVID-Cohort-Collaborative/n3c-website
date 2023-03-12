@@ -10,15 +10,19 @@
 					<h1><strapi:forumsHeader/></h1>
 					<p><util:markdown2html><strapi:forumsBlock1/></util:markdown2html></p>
 					<h2><strapi:forumsHeader2/></h2>
+					<div class="row flex-nowrap">
 					<strapi:foreachForumsForumPresentationsLinks var="x">
 						<strapi:forumsForumPresentationsLinks>
-							<strapi:forumPresentations ID="${tag_forumsForumPresentationsLinks.forumPresentationId}">
-								<h3><strapi:forumPresentationsDate/></h3>
-								<b>Topic:</b><util:markdown2html><strapi:forumPresentationsTopic/></util:markdown2html>
-								<b>Presenters:</b><util:markdown2html><strapi:forumPresentationsPresenters/></util:markdown2html>
-							</strapi:forumPresentations>
+							<jsp:include page="presentation_tile.jsp">
+								<jsp:param value="${tag_forumsForumPresentationsLinks.forumPresentationId}" name="id"/>
+							</jsp:include>
 						</strapi:forumsForumPresentationsLinks>
 					</strapi:foreachForumsForumPresentationsLinks>
+					<div class="col-sm-4">
+						<a class="twitter-timeline" data-height="700" data-width="300" href="https://twitter.com/data2health?ref_src=twsrc%5Etfw">Tweets by data2health</a>
+						<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+					</div>
+					</div>
 				</strapi:forums>
 			</div>
 		</div>
