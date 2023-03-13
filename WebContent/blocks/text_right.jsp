@@ -16,6 +16,8 @@
 		<div class="col col-9">
 			<h2><strapi:contentImageBlockRightsHeader /></h2>
 			<util:markdown2html><strapi:contentImageBlockRightsContent /></util:markdown2html>
+			
+			<a href="<strapi:contentImageBlockRightsUrl/>"><strapi:contentImageBlockRightsUrlLabel/></a>
 		</div>
 	</div>
 </strapi:contentImageBlockRights>
