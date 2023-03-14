@@ -48,6 +48,7 @@ WebContent/dur/index.jsp -text
 WebContent/enclave/index.jsp -text
 WebContent/external-datasets/index.jsp -text
 WebContent/fact-sheet/index.jsp -text
+WebContent/faq/index.jsp -text
 WebContent/faqs/turndown.jsp -text
 WebContent/files/image.jsp -text
 WebContent/files/related_image.jsp -text
@@ -60,6 +61,7 @@ WebContent/forum/presentation_tile.jsp -text
 WebContent/head.jsp -text
 WebContent/header.jsp -text
 WebContent/index.jsp -text
+WebContent/liaisons/index.jsp -text
 WebContent/nav-bars/dynamic.jsp -text
 WebContent/nav-bars/sample.jsp -text
 WebContent/nav.jsp -text
@@ -217,6 +219,7 @@ WebContent/resources/tinymce/themes/silver/theme.min.js -text
 WebContent/resources/tinymce/tinymce.d.ts -text
 WebContent/resources/tinymce/tinymce.min.js -text
 WebContent/standards/index.jsp -text
+WebContent/support/index.jsp -text
 WebContent/training/index.jsp -text
 WebContent/tutorials/index.jsp -text
 WebContent/workstreams/analytics/index.jsp -text
