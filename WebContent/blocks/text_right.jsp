@@ -17,7 +17,9 @@
 			<h2><strapi:contentImageBlockRightsHeader /></h2>
 			<util:markdown2html><strapi:contentImageBlockRightsContent /></util:markdown2html>
 			
-			<a href="<strapi:contentImageBlockRightsUrl/>"><strapi:contentImageBlockRightsUrlLabel/></a>
+			<c:if test="${not empty tag_contentImageBlockRights.url}">
+				<a href="<strapi:contentImageBlockRightsUrl/>"><strapi:contentImageBlockRightsUrlLabel/></a>
+			</c:if>
 		</div>
 	</div>
 </strapi:contentImageBlockRights>
