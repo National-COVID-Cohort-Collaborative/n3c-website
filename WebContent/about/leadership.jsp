@@ -11,7 +11,7 @@
 						<strapi:leadershipsBioGroupsLinks>
 							<strapi:bioGroups ID="${tag_leadershipsBioGroupsLinks.bioGroupId}">
 								<h1><strapi:bioGroupsName /></h1>
-								<div class="row flex-nowrap">
+								<div class="row flex-wrap">
 									<strapi:foreachBiosBioGroupsLinks var="bio" sortCriteria="bio_order">
 										<strapi:biosBioGroupsLinks>
 											<jsp:include page="../bio/thumbnail.jsp">

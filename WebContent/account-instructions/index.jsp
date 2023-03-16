@@ -8,7 +8,6 @@
 			<div class="col-xs-8">
 				<strapi:accountCreations ID="1">
 					<h1><strapi:accountCreationsHeader/></h1>
-					<h2>Intro block</h2>
 					<strapi:foreachAccountCreationsIntroLinks var="x">
 						<strapi:accountCreationsIntroLinks>
 							<jsp:include page="../blocks/text_right.jsp">
@@ -20,8 +19,8 @@
 						</strapi:accountCreationsIntroLinks>
 					</strapi:foreachAccountCreationsIntroLinks>
 					<h2><strapi:accountCreationsHeader2/></h2>
-					<h2>Instruction block</h2>
-					<strapi:foreachAccountCreationsInstructionsLinks var="x">
+
+					<strapi:foreachAccountCreationsInstructionsLinks var="x" sortCriteria="content_image_block_right_order">
 						<strapi:accountCreationsInstructionsLinks>
 							<jsp:include page="../blocks/text_right.jsp">
 								<jsp:param name="id" value="${tag_accountCreationsInstructionsLinks.contentImageBlockRightId}"/>

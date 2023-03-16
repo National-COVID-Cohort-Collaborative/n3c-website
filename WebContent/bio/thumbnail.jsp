@@ -5,14 +5,13 @@
     height:auto;
 }
 </style>
-<div class="card col-xs-2">
+<div class="card col-3">
 	<jsp:include page="headshot.jsp">
 		<jsp:param name="id" value="${param.id}"/>
-		<jsp:param name="format" value="thumbnail"/>
 	</jsp:include>
 	<strapi:bios ID="${param.id}">
 		<strapi:biosFirstName />
-		<strapi:biosLastName />, <strapi:biosTitle />
+		<strapi:biosLastName /><c:if test="${not empty tag_bios.title}">, <strapi:biosTitle /></c:if>
 		<br>
 		<strapi:biosOrganization />
 	</strapi:bios>

@@ -9,11 +9,10 @@
 			<util:markdown2html><strapi:contentImageBlockLeftsContent /></util:markdown2html>
 		</div>
 		<div class="col col-3">
-			<jsp:include page="../files/related_image_pos.jsp">
+			<jsp:include page="../files/related_image.jsp">
 				<jsp:param name="id" value="${param.id}" />
 				<jsp:param name="type" value="${param.type}" />
 				<jsp:param name="field" value="${param.field}" />
-				<jsp:param name="pos" value="${pos}" />
 				<jsp:param name="format" value="thumbnail" />
 			</jsp:include>
 		</div>

@@ -8,18 +8,16 @@
 			<div class="col-xs-8">
 				<strapi:institutionalEssentials ID="1">
 					<h1><strapi:institutionalEssentialsHeader/></h1>
-					<h2>Nav Tiles</h2>
-					<strapi:foreachInstitutionalEssentialsNavTileLinks var="x">
-						<strapi:institutionalEssentialsNavTileLinks>
-							<jsp:include page="../blocks/text_left.jsp">
-								<jsp:param name="id" value="${tag_institutionalEssentialsNavTileLinks.contentImageBlockLeftId}"/>
-								<jsp:param name="type" value="api::content-image-block-left.content-image-block-left"/>
-								<jsp:param name="field" value="image"/>
-								<jsp:param name="image_pos" value="${tag_institutionalEssentialsNavTileLinks.contentImageBlockLeftOrder}"/>
-							</jsp:include>
-						</strapi:institutionalEssentialsNavTileLinks>
-					</strapi:foreachInstitutionalEssentialsNavTileLinks>
-					<h2>Join block</h2>
+					<div class="row flex-wrap">
+						<strapi:foreachInstitutionalEssentialsNavTilesLinks var="x" sortCriteria="nav_tile_order">
+							<strapi:institutionalEssentialsNavTilesLinks>
+								<jsp:include page="../blocks/nav_tile.jsp">
+									<jsp:param value="${tag_institutionalEssentialsNavTilesLinks.navTileId}" name="id" />
+								</jsp:include>
+							</strapi:institutionalEssentialsNavTilesLinks>
+						</strapi:foreachInstitutionalEssentialsNavTilesLinks>
+					</div>
+
 					<strapi:foreachInstitutionalEssentialsJoinBlockLinks var="y">
 						<strapi:institutionalEssentialsJoinBlockLinks>
 							<jsp:include page="../blocks/text_left.jsp">
@@ -30,14 +28,15 @@
 							</jsp:include>
 						</strapi:institutionalEssentialsJoinBlockLinks>
 					</strapi:foreachInstitutionalEssentialsJoinBlockLinks>
-					<h2>step</h2>
-					<strapi:foreachInstitutionalEssentialsStepLinks var="z">
+
+					<h2><strapi:institutionalEssentialsHeader2/></h2>
+					<strapi:foreachInstitutionalEssentialsStepLinks var="z" sortCriteria="content_image_block_right_order">
 						<strapi:institutionalEssentialsStepLinks>
 							<jsp:include page="../blocks/text_right.jsp">
 								<jsp:param name="id" value="${tag_institutionalEssentialsStepLinks.contentImageBlockRightId}"/>
 								<jsp:param name="type" value="api::content-image-block-right.content-image-block-right"/>
 								<jsp:param name="field" value="image"/>
-								<jsp:param name="image_pos" value="${tag_institutionalEssentialsStepLinks.contentImageBlockRightOrder}"/>
+								<jsp:param name="image_pos" value="1"/>
 							</jsp:include>
 						</strapi:institutionalEssentialsStepLinks>
 					</strapi:foreachInstitutionalEssentialsStepLinks>

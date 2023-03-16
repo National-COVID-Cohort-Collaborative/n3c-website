@@ -16,7 +16,7 @@
 					
 					<%@ include file="../common/nav.jsp" %>
 					
-					<%@ include file="../common/faq.jsp" %>
+					<%@ include file="table.html" %>
 
 					<%@ include file="../common/leadership.jsp" %>
 					

@@ -27,28 +27,34 @@
 					</h2>
 					
 					<h2><strapi:onboardingsRegistrationHeader/></h2>
-					<strapi:foreachOnboardingsStepLinks var="x">
+					<strapi:foreachOnboardingsStepLinks var="x" sortCriteria="content_image_block_right_order">
 						<strapi:onboardingsStepLinks>
 							<jsp:include page="../blocks/text_right.jsp">
 								<jsp:param name="id" value="${tag_onboardingsStepLinks.contentImageBlockRightId}"/>
 								<jsp:param name="type" value="api::content-image-block-right.content-image-block-right"/>
 								<jsp:param name="field" value="image"/>
-								<jsp:param name="image_pos" value="${tag_onboardingsStepLinks.contentImageBlockRightOrder}"/>
+								<jsp:param name="image_pos" value="1"/>
 							</jsp:include>
 						</strapi:onboardingsStepLinks>
 					</strapi:foreachOnboardingsStepLinks>
 					
-					<h2>Nav block</h2>
-					<strapi:foreachOnboardingsNavTileLinks var="x">
-						<strapi:onboardingsNavTileLinks>
-							<jsp:include page="../blocks/text_left.jsp">
-								<jsp:param name="id" value="${tag_onboardingsNavTileLinks.contentImageBlockLeftId}"/>
-								<jsp:param name="type" value="api::content-image-block-left.content-image-block-left"/>
-								<jsp:param name="field" value="image"/>
-								<jsp:param name="image_pos" value="${tag_onboardingsNavTileLinks.contentImageBlockLeftOrder}"/>
-							</jsp:include>
-						</strapi:onboardingsNavTileLinks>
-					</strapi:foreachOnboardingsNavTileLinks>
+					<div class="row flex-wrap">
+						<strapi:foreachOnboardingsNavTilesLinks var="x" sortCriteria="nav_tile_order">
+							<strapi:onboardingsNavTilesLinks>
+								<jsp:include page="../blocks/nav_tile.jsp">
+									<jsp:param value="${tag_onboardingsNavTilesLinks.navTileId}" name="id" />
+								</jsp:include>
+							</strapi:onboardingsNavTilesLinks>
+						</strapi:foreachOnboardingsNavTilesLinks>
+					</div>
+				
+					<div class="row">
+						<strapi:onboardingsBlock/>
+					</div>
+				
+					<div class="row">
+						<strapi:onboardingsBlock2/>
+					</div>
 				</strapi:onboardings>
 			</div>
 		</div>

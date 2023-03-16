@@ -8,7 +8,6 @@
 			<div class="col-xs-8">
 				<strapi:externalDatasets ID="1">
 					<h1><strapi:externalDatasetsHeader/></h1>
-					<h2>Description block</h2>
 					<strapi:foreachExternalDatasetsDescriptionLinks var="x">
 						<strapi:externalDatasetsDescriptionLinks>
 							<jsp:include page="../blocks/text_left.jsp">
@@ -19,6 +18,7 @@
 							</jsp:include>
 						</strapi:externalDatasetsDescriptionLinks>
 					</strapi:foreachExternalDatasetsDescriptionLinks>
+
 					<div class="row flex-nowrap">
 						<div class="col-xs-7">
 							<util:markdown2html><strapi:externalDatasetsBlock1/></util:markdown2html>
@@ -33,7 +33,7 @@
 							</strapi:foreachExternalDatasetsYouTubeVideoLinks>
 						</div>
 					</div>
-					<h2>Ingestion block</h2>
+
 					<strapi:foreachExternalDatasetsIngestionLinks var="x">
 						<strapi:externalDatasetsIngestionLinks>
 							<jsp:include page="../blocks/text_right.jsp">
@@ -44,7 +44,14 @@
 							</jsp:include>
 						</strapi:externalDatasetsIngestionLinks>
 					</strapi:foreachExternalDatasetsIngestionLinks>
-					<h2>Support block</h2>
+
+					<jsp:include page="../files/related_image.jsp">
+						<jsp:param name="id" value="1" />
+						<jsp:param name="type" value="api::external-dataset.external-dataset" />
+						<jsp:param name="field" value="graphic" />
+						<jsp:param name="format" value="large" />
+					</jsp:include>
+
 					<strapi:foreachExternalDatasetsSupportLinks var="x">
 						<strapi:externalDatasetsSupportLinks>
 							<jsp:include page="../blocks/text_left.jsp">

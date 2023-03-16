@@ -32,6 +32,7 @@ WebContent/blocks/nav_tile_no_text.jsp -text
 WebContent/blocks/resource_tile.jsp -text
 WebContent/blocks/resource_tile_no_image.jsp -text
 WebContent/blocks/text_left.jsp -text
+WebContent/blocks/text_left_card.jsp -text
 WebContent/blocks/text_right.jsp -text
 WebContent/branding.jsp -text
 WebContent/calendar/index.jsp -text
@@ -231,6 +232,7 @@ WebContent/workstreams/common/faq.jsp -text
 WebContent/workstreams/common/leadership.jsp -text
 WebContent/workstreams/common/nav.jsp -text
 WebContent/workstreams/governance/index.jsp -text
+WebContent/workstreams/governance/table.html -text
 WebContent/workstreams/harmonization/index.jsp -text
 WebContent/workstreams/index.jsp -text
 WebContent/workstreams/phenotype/index.jsp -text
