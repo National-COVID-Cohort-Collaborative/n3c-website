@@ -5,7 +5,7 @@
 	<div class="container-fluid">
 		<jsp:include page="../header.jsp" />
 		<div class="row flex-nowrap">
-			<div class="col-xs-8">
+			<div class="col-12">
 				<strapi:workstreams ID="1">
 					<h1><strapi:workstreamsHeader /></h1>
 					<util:markdown2html><strapi:workstreamsBlock1 /></util:markdown2html>
@@ -19,11 +19,11 @@
 
 					<strapi:foreachWorkstreamsYouTubeVideoLinks var="x">
 						<strapi:workstreamsYouTubeVideoLinks>
-							<div class="row flex-nowrap">
-								<div class="col-xs-7">
+							<div class="row flex-nowrap block">
+								<div class="col-7">
 									<util:markdown2html><strapi:workstreamsBlock2 /></util:markdown2html>
 								</div>
-								<div class="col-xs-5">
+								<div class="col-5">
 									<jsp:include page="../youtube/video.jsp">
 										<jsp:param value="${tag_workstreamsYouTubeVideoLinks.youTubeVideoId}" name="id" />
 									</jsp:include>
@@ -33,8 +33,8 @@
 					</strapi:foreachWorkstreamsYouTubeVideoLinks>
 					<util:markdown2html><strapi:workstreamsBlock3/></util:markdown2html>
 
-						<div class="row flex-nowrap">
-							<div class="col-xs-12">
+						<div class="row flex-nowrap block">
+							<div class="col-12">
 								<h2>Workstreams</h2>
 							</div>
 						</div>
@@ -48,8 +48,10 @@
 							</strapi:foreachWorkstreamsNavTilesLinks>
 						</div>
 
-					<h2>Events</h2>
-					<strapi:workstreamsEvents/>
+					<div class="row flex-nowrap block">
+						<h2>Events</h2>
+						<util:markdown2html><strapi:workstreamsEvents/></util:markdown2html>
+					</div>
 				</strapi:workstreams>
 			</div>
 		</div>

@@ -5,7 +5,10 @@
 	<div class="container-fluid">
 		<jsp:include page="../header.jsp" />
 		<div class="row flex-nowrap">
-			<div class="col-xs-8">
+			<div class="col-2">
+				&nbsp;
+			</div>
+			<div class="col-8">
 				<strapi:forums ID="1">
 					<h1><strapi:forumsHeader/></h1>
 					<p><util:markdown2html><strapi:forumsBlock1/></util:markdown2html></p>
@@ -18,7 +21,7 @@
 							</jsp:include>
 						</strapi:forumsForumPresentationsLinks>
 					</strapi:foreachForumsForumPresentationsLinks>
-					<div class="col-sm-4">
+					<div class="col-4">
 						<a class="twitter-timeline" data-height="700" data-width="300" href="https://twitter.com/data2health?ref_src=twsrc%5Etfw">Tweets by data2health</a>
 						<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 					</div>

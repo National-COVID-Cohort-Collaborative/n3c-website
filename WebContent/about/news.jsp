@@ -1,14 +1,6 @@
 <%@ include file="../_include.jsp"%>
 <html>
 <jsp:include page="../head.jsp" />
-<style>
-
-#top {
-	background-color: Gainsboro;
-	margin-left: 10%;
-	margin-right: 10%;
-}
-</style>
 
 <body>
 	<div class="container-fluid">

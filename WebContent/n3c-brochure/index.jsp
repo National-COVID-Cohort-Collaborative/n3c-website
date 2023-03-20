@@ -4,7 +4,7 @@
 <body>
 	<div class="container-fluid">
 		<jsp:include page="../header.jsp" />
-		<div class="col-xs-8">
+		<div class="col-12 center">
 			<strapi:brochures ID="1">
 				<h1><strapi:brochuresHeader /></h1>
 				<p><a href="../files/download.jsp?id=1&type=api::brochure.brochure&field=pdf"><strapi:brochuresPdfLinkHeader /></a></p>

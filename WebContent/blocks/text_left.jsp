@@ -4,11 +4,13 @@
 
 <strapi:contentImageBlockLefts ID="${param.id}">
 	<div class="row flex-nowrap">
-		<div class="col col-9">
-			<h2><strapi:contentImageBlockLeftsHeader /></h2>
+		<div class="col-9">
+			<c:if test="${not empty tag_contentImageBlockLefts.header}">
+				<h2><strapi:contentImageBlockLeftsHeader /></h2>
+			</c:if>
 			<util:markdown2html><strapi:contentImageBlockLeftsContent /></util:markdown2html>
 		</div>
-		<div class="col col-3">
+		<div class="col-3">
 			<jsp:include page="../files/related_image.jsp">
 				<jsp:param name="id" value="${param.id}" />
 				<jsp:param name="type" value="${param.type}" />

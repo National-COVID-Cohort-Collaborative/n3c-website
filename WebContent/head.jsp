@@ -1,3 +1,5 @@
+<%@ include file="../_include.jsp"%>
+
     <head>
         <title>n3c-website</title>
         <meta charset="utf-8">
@@ -12,10 +14,6 @@
         
         <link rel="stylesheet" type="text/css" href="/n3c-dashboard-admin/resources/DataTables/css/jquery.dataTables.min.css">
         <script type="text/javascript" charset="utf8" src="/n3c-dashboard-admin/resources/DataTables/js/jquery.dataTables.min.js"></script>
-        <style type="text/css" media="all">
-        	@import "/n3c-dashboard-admin/resources/n3c_login_style.css";
-        	@import "/n3c-dashboard-admin/resources/main_style.css";
-        </style>
         
         <!-- bootstrap Latest compiled JavaScript -->
 		<script type='text/javascript' src='/n3c-website/resources/bootstrap/js/bootstrap.bundle.min.js '></script>
@@ -24,6 +22,9 @@
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+ 
+ 	<!-- local stylesheets -->
+	<link rel="stylesheet" href="<util:applicationRoot/>/resources/main_style.css">
  
         <style type="text/css">
         table.dataTable thead .sorting_asc {
