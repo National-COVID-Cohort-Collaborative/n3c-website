@@ -1,3 +1,4 @@
+<%@ include file="_include.jsp"%>
 <style>
 
 .navbar {
@@ -64,7 +65,7 @@
 .l-ribbon li .ribbon-right {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
     opacity: 0.3;
-    background-image: url(http://dora.info-science.uiowa.edu:1337/uploads/nih_icon_list_9a32809d25.png);
+    background-image: url(<util:propertyValue propertyFile="strapi" name="strapi-path"/>/uploads/nih_icon_list_9a32809d25.png);
     background-size: 189px 400px;
     background-position: -52px -126px;
     height: 30px;
@@ -74,7 +75,7 @@
 }
 
 .ribbon-hhs {
-    background-image: url(http://dora.info-science.uiowa.edu:1337/uploads/nih_icon_list_9a32809d25.png);
+    background-image: url(<util:propertyValue propertyFile="strapi" name="strapi-path"/>/uploads/nih_icon_list_9a32809d25.png);
     background-size: 189px 400px;
     background-position: 0 -126px;
     height: 27px;
@@ -84,7 +85,7 @@
 }
 
 .ribbon-nih {
-    background-image: url(http://dora.info-science.uiowa.edu:1337/uploads/nih_icon_900ef05269.png );
+    background-image: url(<util:propertyValue propertyFile="strapi" name="strapi-path"/>/uploads/nih_icon_900ef05269.png );
     background-size: 20px;
     background-repeat: no-repeat;
     height: 20px;

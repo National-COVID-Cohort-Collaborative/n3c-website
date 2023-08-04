@@ -44,7 +44,7 @@ display: inline;
 		<div class="row footer-block">
 			<div class="col-xs-12 col-md-3">
 				<strapi:files ID="51">
-					<img alt="" src="http://dora.info-science.uiowa.edu:1337<strapi:filesUrl/>" style="padding:20px; max-width:300px; margin:auto; align-self:flex-start;">
+					<img alt="" src="<util:propertyValue propertyFile="strapi" name="strapi-path"/><strapi:filesUrl/>" style="padding:20px; max-width:300px; margin:auto; align-self:flex-start;">
 				</strapi:files>
 			</div>
 			<div class="col-xs-12 col-md-9">
