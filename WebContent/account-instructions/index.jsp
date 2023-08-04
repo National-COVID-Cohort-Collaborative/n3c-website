@@ -4,8 +4,8 @@
 <body>
 	<div class="container-fluid">
 		<jsp:include page="../header.jsp" />
-		<div class="row flex-nowrap">
-			<div class="col-xs-8">
+		<div class="row flex-nowrap main-block">
+			<div class="block">
 				<strapi:accountCreations ID="1">
 					<h1><strapi:accountCreationsHeader/></h1>
 					<strapi:foreachAccountCreationsIntroLinks var="x">

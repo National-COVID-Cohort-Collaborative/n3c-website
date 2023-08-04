@@ -8,7 +8,7 @@
 			<div class="row flex-wrap">
 				<strapi:foreachPresentationsYouTubeVideosLinks var="idIter" sortCriteria="you_tube_video_order">
 					<strapi:presentationsYouTubeVideosLinks>
-						<div class="col-xs-5">
+						<div class="col-6">
 							<jsp:include page="../youtube/video.jsp">
 								<jsp:param value="${tag_presentationsYouTubeVideosLinks.youTubeVideoId }" name="id" />
 							</jsp:include>

@@ -4,7 +4,7 @@
 <body>
 	<div class="container-fluid">
 		<jsp:include page="../header.jsp" />
-		<div class="row flex-nowrap">
+		<div class="row flex-nowrap main-block">
 			<div class="col-xs-8">
 				<strapi:externalDatasets ID="1">
 					<h1><strapi:externalDatasetsHeader/></h1>
@@ -20,10 +20,10 @@
 					</strapi:foreachExternalDatasetsDescriptionLinks>
 
 					<div class="row flex-nowrap">
-						<div class="col-xs-7">
+						<div class="col-6">
 							<util:markdown2html><strapi:externalDatasetsBlock1/></util:markdown2html>
 						</div>
-						<div class="col-xs-5">
+						<div class="col-6">
 							<strapi:foreachExternalDatasetsYouTubeVideoLinks var="x">
 								<strapi:externalDatasetsYouTubeVideoLinks>
 									<jsp:include page="../youtube/video.jsp">
@@ -45,12 +45,14 @@
 						</strapi:externalDatasetsIngestionLinks>
 					</strapi:foreachExternalDatasetsIngestionLinks>
 
-					<jsp:include page="../files/related_image.jsp">
-						<jsp:param name="id" value="1" />
-						<jsp:param name="type" value="api::external-dataset.external-dataset" />
-						<jsp:param name="field" value="graphic" />
-						<jsp:param name="format" value="large" />
-					</jsp:include>
+					<div class="center">
+						<jsp:include page="../files/related_image.jsp">
+							<jsp:param name="id" value="1" />
+							<jsp:param name="type" value="api::external-dataset.external-dataset" />
+							<jsp:param name="field" value="graphic" />
+							<jsp:param name="format" value="large" />
+						</jsp:include>
+					</div>
 
 					<strapi:foreachExternalDatasetsSupportLinks var="x">
 						<strapi:externalDatasetsSupportLinks>

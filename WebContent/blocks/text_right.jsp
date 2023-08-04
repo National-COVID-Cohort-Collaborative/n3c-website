@@ -3,7 +3,7 @@
 <fmt:parseNumber var="pos" value="${param.image_pos}" integerOnly="true"/>
 
 <strapi:contentImageBlockRights ID="${param.id}">
-	<div class="row flex-nowrap">
+	<div class="row flex-nowrap block">
 		<div class="col col-3">
 			<jsp:include page="../files/related_image_pos.jsp">
 				<jsp:param name="id" value="${param.id}" />

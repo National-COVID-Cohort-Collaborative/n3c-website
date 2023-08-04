@@ -3,7 +3,7 @@
 <fmt:parseNumber var="pos" value="${param.image_pos}" integerOnly="true"/>
 
 <strapi:contentImageBlockLefts ID="${param.id}">
-	<div class="row flex-nowrap">
+	<div class="row flex-nowrap block">
 		<div class="col-9">
 			<c:if test="${not empty tag_contentImageBlockLefts.header}">
 				<h2><strapi:contentImageBlockLeftsHeader /></h2>

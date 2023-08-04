@@ -18,10 +18,10 @@
 				</div>
 			</div>
 			<div class="row flex-nowrap block">
-				<div class="col-9">
+				<div class="col-6">
 					<util:markdown2html><strapi:domainsBlock2 /></util:markdown2html>
 				</div>
-				<div class="col-5">
+				<div class="col-6">
 					<jsp:include page="../youtube/video.jsp">
 						<jsp:param value="2" name="id" />
 					</jsp:include>
@@ -29,7 +29,7 @@
 			</div>
 
 			<div class="block">
-				<h2>Domain Teams</h2>
+				<h2 class="center">Domain Teams</h2>
 				<div class="row flex-wrap">
 					<strapi:foreachDomainsDomainTeamsLinks var="domains" sortCriteria="domain_team_order">
 						<strapi:domainsDomainTeamsLinks>
@@ -45,7 +45,7 @@
 			</div>
 
 			<div class="block">
-				<h2>Cross Cutting Teams</h2>
+				<h2 class="center">Cross Cutting Teams</h2>
 				<div class="row flex-wrap">
 					<strapi:foreachDomainsCrossCuttingTeamsLinks var="domains" sortCriteria="domain_team_order">
 						<strapi:domainsCrossCuttingTeamsLinks>
