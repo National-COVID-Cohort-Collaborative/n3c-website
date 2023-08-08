@@ -61,6 +61,8 @@
 			</div>
 		</strapi:domains>
 	</div>
+	<h2 class="center">Domain Teams Calendar</h2>
+	<jsp:include page="../calendar/domain_teams.jsp"/>
 	<jsp:include page="../footer.jsp" />
 </body>
 </html>

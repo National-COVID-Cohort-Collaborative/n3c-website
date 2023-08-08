@@ -2,7 +2,7 @@
 
 <strapi:resources ID="${param.id}">
 	<div class="col col-3">
-		<div class="row">
+		<div class="row block">
 			<jsp:include page="../files/related_image_pos.jsp">
 				<jsp:param name="id" value="${param.id}" />
 				<jsp:param name="type" value="api::resource.resource" />

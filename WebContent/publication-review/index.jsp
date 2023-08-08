@@ -4,7 +4,7 @@
 <body>
 	<div class="container-fluid">
 		<jsp:include page="../header.jsp" />
-		<div class="col-xs-8">
+		<div class="main-block">
 			<strapi:publicationReviews ID="1">
 				<h1><strapi:publicationReviewsHeader/></h1>
 				<strapi:foreachPublicationReviewsIntroBlockLinks var="x">

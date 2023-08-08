@@ -4,7 +4,7 @@
 <body>
 	<div class="container-fluid">
 		<jsp:include page="../header.jsp" />
-		<div class="row flex-nowrap">
+		<div class="row flex-nowrap main-block">
 			<div class="col col-12 col-lg-2 side-col">
 				<div class="scrollingHeading">
 					<div id="navigation">
@@ -40,12 +40,12 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-xs-8">
+			<div class="col-10">
 				<h1>N3C Public Health Answers to Speed Tractable Results (PHASTR)</h1>
 				<strapi:phastrs ID="1">
 					<a id="projects"></a>
 					<h3>The following questions are open for application:</h3>
-					<div class="row flex-nowrap">
+					<div class="row flex-wrap">
 						<strapi:foreachPhastrsPublicHealthQuestionsLinks var="phqs" sortCriteria="public_health_question_order">
 							<strapi:phastrsPublicHealthQuestionsLinks>
 								<jsp:include page="tile.jsp">

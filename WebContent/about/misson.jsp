@@ -4,7 +4,7 @@
 <body>
 	<div class="container-fluid">
 		<jsp:include page="../header.jsp" />
-		<div class="row flex-nowrap">
+		<div class="row flex-nowrap main-block">
 			<div class="col-12">
 				<strapi:missions ID="1">
 					<div class="row flex-nowrap">

@@ -5,7 +5,7 @@
 	<div class="container-fluid">
 		<jsp:include page="../../header.jsp" />
 		<div class="row flex-nowrap">
-			<div class="col-xs-8">
+			<div class="main-block">
 				<strapi:workstreamInstances ID="4">
 					<h1><strapi:workstreamInstancesHeader/></h1>
 					

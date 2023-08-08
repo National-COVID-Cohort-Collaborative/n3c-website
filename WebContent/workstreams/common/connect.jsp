@@ -1,10 +1,10 @@
 
 <div class="row flex-nowrap">
-	<div class="col-xs-7">
+	<div class="col-8">
 		<h2><strapi:workstreamInstancesConnectHeader /></h2>
 		<util:markdown2html><strapi:workstreamInstancesConnectBlock /></util:markdown2html>
 	</div>
-	<div class="col-xs-5">
+	<div class="col-4">
 		<jsp:include page="../../files/related_image_pos.jsp">
 			<jsp:param name="id" value="${tag_workstreamInstances.ID}" />
 			<jsp:param name="type" value="api::workstream-instance.workstream-instance" />

@@ -64,6 +64,10 @@ h5{
 	margin-right: 10%;
 }
 
+.event {
+	background-color: Gainsboro;
+}
+
 .center {
 	margin: auto;
 	text-align: center;

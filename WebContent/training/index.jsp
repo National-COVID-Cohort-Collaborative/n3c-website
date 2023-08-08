@@ -4,7 +4,7 @@
 <body>
 	<div class="container-fluid">
 		<jsp:include page="../header.jsp" />
-		<div class="col-xs-8">
+		<div class="main-block">
 			<strapi:trainings ID="1">
 				<h1><strapi:trainingsHeader/></h1>
 				<util:markdown2html><strapi:trainingsBlock1/></util:markdown2html>

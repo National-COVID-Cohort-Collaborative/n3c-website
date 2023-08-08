@@ -35,6 +35,7 @@ WebContent/blocks/text_left.jsp -text
 WebContent/blocks/text_left_card.jsp -text
 WebContent/blocks/text_right.jsp -text
 WebContent/branding.jsp -text
+WebContent/calendar/domain_teams.jsp -text
 WebContent/calendar/index.jsp -text
 WebContent/communications/index.jsp -text
 WebContent/contributors/index.jsp -text
@@ -60,6 +61,8 @@ WebContent/for-institutions/index.jsp -text
 WebContent/for-researchers/index.jsp -text
 WebContent/forum/index.jsp -text
 WebContent/forum/presentation_tile.jsp -text
+WebContent/google-calendar/calendar.jsp -text
+WebContent/google-calendar/index.jsp -text
 WebContent/head.jsp -text
 WebContent/header.jsp -text
 WebContent/index.jsp -text

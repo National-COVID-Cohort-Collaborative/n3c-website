@@ -4,7 +4,7 @@
 <body>
 	<div class="container-fluid">
 		<jsp:include page="../header.jsp" />
-		<div class="col-xs-8">
+		<div class="main-block">
 			<strapi:acknowledgements ID="1">
 				<h1><strapi:acknowledgementsHeader/></h1>
 				<util:markdown2html><strapi:acknowledgementsBlock/></util:markdown2html>
@@ -17,6 +17,8 @@
 									<jsp:param name="type" value="api::content-image-block-right.content-image-block-right" />
 									<jsp:param name="field" value="image" />
 									<jsp:param name="image_pos" value="1" />
+									<jsp:param name="width" value="10" />
+									<jsp:param name="copy" value="true" />
 								</jsp:include>
 							</div>
 						</strapi:acknowledgementsContentImageBlockRightsLinks>

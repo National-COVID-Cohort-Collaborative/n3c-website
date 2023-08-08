@@ -1,109 +1,27 @@
 <%@ include file="../_include.jsp"%>
 <html>
-<jsp:include page="../head.jsp" />
-<style type="text/css">h1 {
-		text-align:center;
-		color: #376076;
-		margin-bottom: 12px;
-		font-size: 40px;
-	}
-	h2 {
-		text-align:center;
-		color: #376076;
-	}
-	p {
-		font-size: 16px;
-		line-height: 29px;
-	}
-	#introText {
-		margin: 12px auto;
-	}
-
-	.projects .row{
-		justify-content:center;
-		display:flex;
-	}
-
-	#table1 thead th{
-		text-align:center;
-	}
-
-	.dataTables_filter{
-		
-		width:100%;
-		text-align:center !important;
-		margin-top: 40px;
-		margin-bottom: 20px;
-	}
-
-	.dataTables_length {
-		display: none;
-	}
-
-	#table1_filter input{
-		width:180px;
-
-	}
-	th {
-		display: none;
-	}
-	.projectDesc {
-		font-size: 16px;
-	}
-	.dt-searchPanes .label{
-		color:#333;
-	}
-	div.dt-searchPanes {
-		display: none !important;
-		height: 1px;
-	}
-	.pane {
-		display: none;
-	}
-
+<style>
 	.complete{
     	display:none;
 	}	
-
-	.morelink{
-		border: none;
-    	background-color: inherit;
-    	color: #1570ba;
-    	outline: none;
-	}
-
-	.morelink:hover,
-	.morelink:focus{
-		border: none;
-    	background-color: inherit;
-    	color: #1570ba;
-    	outline: none;
-	}
 </style>
+<jsp:include page="../head.jsp" />
 <body>
 	<div class="container-fluid">
 		<jsp:include page="../header.jsp" />
-		<div class="row flex-nowrap">
+		<div class="row flex-nowrap main-block">
 			<div class="col-xs-8">
 				<strapi:projects ID="1">
-					<h1>
-						<strapi:projectsHeader />
-					</h1>
-					<util:markdown2html>
-						<strapi:projectsBlock1 />
-					</util:markdown2html>
+					<h1><strapi:projectsHeader /></h1>
+					<util:markdown2html><strapi:projectsBlock1 /></util:markdown2html>
 				</strapi:projects>
-<div class="projects">
-				<div class="row">
-					<div class="col-xs-12 col-md-6">
+				<div class="block">
 						<div class="tableSection" id="table">&nbsp;</div>
-					</div>
 				</div>
 			</div>
-			<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-<link href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css" rel="stylesheet" type="text/css" /><script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
-<link href="https://cdn.datatables.net/plug-ins/preview/searchPane/dataTables.searchPane.min.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" charset="utf8" src="https:////cdn.datatables.net/plug-ins/preview/searchPane/dataTables.searchPane.min.js"></script>
+		</div>
+		<jsp:include page="../footer.jsp" />
+	</div>
 <script>
 $.getJSON("https://labs.cd2h.org/n3c_dashboard/embedded_project_roster3.jsp", function(data){
 		
@@ -158,7 +76,12 @@ $.getJSON("https://labs.cd2h.org/n3c_dashboard/embedded_project_roster3.jsp", fu
                         var c = content.substr(1, showChar);
             			var h = content.substr(showChar +1, content.length - showChar -2);
 
-                        var combo = '<p> <h3 style="color:#376076";>' + title + '<\/h3>' + '<div class="projectDesc"><strong>Lead Investigator:<\/strong> ' + contact + ' <br> <strong>Accessing Institution:<\/strong> ' + institution + ' <br> <strong>Project ID:<\/strong> ' + uid + '<br><br>'+ '<\/p> <div class="projectDesc" style="letter-spacing:-10px;"> <span class="teaser">'+ c + '<\/span> <span class="complete">' + h + '<br><\/span><button class="morelink more"> ...More<\/button><\/div><\/div>';
+                        var combo = '<p> <h3 style="color:#376076";>' + title + '<\/h3>' + '<div class="projectDesc"><strong>Lead Investigator:<\/strong> ' + contact + ' <br> <strong>Accessing Institution:<\/strong> ' + institution + ' <br> <strong>Project ID:<\/strong> ' + uid + '<br><br>'+ '<\/p>'
+                        			+"<div class='projectDesc'"
+                        				+"<span class='teaser'>"+ c + "<\/span>"
+                        				+ "<span class='complete'>" + h + "<\/span>"
+                        				+ "<br><button class='morelink more'> ...More<\/button>"
+                        			+ "<\/div>";
                         
                         return  combo.toString();
                      }
@@ -197,9 +120,5 @@ $.getJSON("https://labs.cd2h.org/n3c_dashboard/embedded_project_roster3.jsp", fu
 
 });
 </script>
-			</div>
-		</div>
-		<jsp:include page="../footer.jsp" />
-	</div>
 </body>
 </html>

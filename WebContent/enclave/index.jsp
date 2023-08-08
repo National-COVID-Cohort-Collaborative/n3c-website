@@ -5,7 +5,7 @@
 	<div class="container-fluid">
 		<jsp:include page="../header.jsp" />
 		<strapi:enclaveEssentials ID="1">
-			<div class="row flex-nowrap">
+			<div class="row flex-nowrap main-block">
 				<div class="col-12">
 					<h1><strapi:enclaveEssentialsHeader /></h1>
 					<strapi:foreachEnclaveEssentialsDescriptionLinks var="x">
@@ -35,7 +35,7 @@
 					</strapi:foreachEnclaveEssentialsUserTilesLinks>
 				</div>
 			</div>
-			<div class="row flex-wrap block">
+			<div class="row flex-wrap main-block">
 				<strapi:foreachEnclaveEssentialsNavTilesLinks var="x" sortCriteria="content_image_block_left_order">
 					<strapi:enclaveEssentialsNavTilesLinks>
 						<jsp:include page="../blocks/text_left_card.jsp">

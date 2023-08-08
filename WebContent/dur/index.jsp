@@ -4,7 +4,7 @@
 <body>
 	<div class="container-fluid">
 		<jsp:include page="../header.jsp" />
-		<div class="col-xs-8">
+		<div class="main-block">
 			<strapi:durRequests ID="1">
 				<h1><strapi:durRequestsHeader/></h1>
 				
@@ -16,23 +16,28 @@
 				
 				<h3><strapi:durRequestsProcessHeader/></h3>
 				<h4><strapi:durRequestsPrereqHeader/></h4>
-				<jsp:include page="../files/related_image_pos.jsp">
-					<jsp:param name="id" value="1" />
-					<jsp:param name="type" value="api::dur-request.dur-request" />
-					<jsp:param name="field" value="prereq_graphic" />
-					<jsp:param name="pos" value="1" />
-					<jsp:param name="format" value="small" />
-				</jsp:include>
+				<div class="center">
+					<jsp:include page="../files/related_image_pos.jsp">
+						<jsp:param name="id" value="1" />
+						<jsp:param name="type" value="api::dur-request.dur-request" />
+						<jsp:param name="field" value="prereq_graphic" />
+						<jsp:param name="pos" value="1" />
+						<jsp:param name="format" value="small" />
+					</jsp:include>
+				</div>
 				<util:markdown2html><strapi:durRequestsPrereqBlock/></util:markdown2html>
 				
 				<h4><strapi:durRequestsSubmitHeader/></h4>
-				<jsp:include page="../files/related_image_pos.jsp">
-					<jsp:param name="id" value="1" />
-					<jsp:param name="type" value="api::dur-request.dur-request" />
-					<jsp:param name="field" value="submit_graphic" />
-					<jsp:param name="pos" value="1" />
-					<jsp:param name="format" value="small" />
-				</jsp:include>
+				<div class="center">
+					<jsp:include page="../files/related_image_pos.jsp">
+						<jsp:param name="id" value="1" />
+						<jsp:param name="type" value="api::dur-request.dur-request" />
+						<jsp:param name="field" value="submit_graphic" />
+						<jsp:param name="pos" value="1" />
+						<jsp:param name="format" value="small" />
+					</jsp:include>
+				</div>
+
 				<util:markdown2html><strapi:durRequestsSubmitBlock/></util:markdown2html>
 				<util:markdown2html><strapi:durRequestsSubmitBlock2/></util:markdown2html>
 				<util:markdown2html><strapi:durRequestsSubmitBlock3/></util:markdown2html>

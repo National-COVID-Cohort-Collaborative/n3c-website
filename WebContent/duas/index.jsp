@@ -4,7 +4,7 @@
 <body>
 	<div class="container-fluid">
 		<jsp:include page="../header.jsp" />
-		<div class="row flex-nowrap">
+		<div class="row flex-nowrap main-block">
 			<div class="col-xs-8">
 				<strapi:duaLists ID="1">
 					<h1><strapi:duaListsHeader/></h1>

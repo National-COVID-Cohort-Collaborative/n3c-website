@@ -5,7 +5,7 @@
 	<div class="container-fluid">
 		<jsp:include page="../header.jsp" />
 		<div class="row flex-nowrap">
-			<div class="col-12">
+			<div class="main-block">
 				<strapi:workstreams ID="1">
 					<h1><strapi:workstreamsHeader /></h1>
 					<util:markdown2html><strapi:workstreamsBlock1 /></util:markdown2html>
@@ -35,7 +35,7 @@
 
 						<div class="row flex-nowrap block">
 							<div class="col-12">
-								<h2>Workstreams</h2>
+								<h2 class="center">Workstreams</h2>
 							</div>
 						</div>
 						<div class="row flex-nowrap">
@@ -48,11 +48,14 @@
 							</strapi:foreachWorkstreamsNavTilesLinks>
 						</div>
 
-					<div class="row flex-nowrap block">
-						<h2>Events</h2>
-						<util:markdown2html><strapi:workstreamsEvents/></util:markdown2html>
-					</div>
 				</strapi:workstreams>
+					<div class="row main-block">
+						<div class="col-12">
+							<h2 class="center">N3C Events</h2>
+						</div>
+						<jsp:include page="../google-calendar/calendar.jsp"/>
+						<p class="center"><a href="<util:applicationRoot/>/calendar">View N3C Calendar</a></p>
+					</div>
 			</div>
 		</div>
 		<jsp:include page="../footer.jsp" />
