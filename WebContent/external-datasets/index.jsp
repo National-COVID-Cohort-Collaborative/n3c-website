@@ -28,6 +28,7 @@
 								<strapi:externalDatasetsYouTubeVideoLinks>
 									<jsp:include page="../youtube/video.jsp">
 										<jsp:param value="${tag_externalDatasetsYouTubeVideoLinks.youTubeVideoId}" name="id" />
+										<jsp:param value="false" name="footer"/>
 									</jsp:include>
 								</strapi:externalDatasetsYouTubeVideoLinks>
 							</strapi:foreachExternalDatasetsYouTubeVideoLinks>

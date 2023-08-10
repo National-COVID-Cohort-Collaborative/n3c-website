@@ -29,6 +29,19 @@ h5{
 	font-weight:600;
 }
 
+table {
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+th {
+	padding: 10px;
+}
+
+td {
+	padding: 10px;
+}
+
 .text-max{
 	max-width:750px;
 }
@@ -66,6 +79,13 @@ h5{
 
 .event {
 	background-color: Gainsboro;
+}
+
+.shade {
+	margin-top:10px;
+	margin-bottom:10px;
+	padding-top:10px;
+	background-color: #eeeeee;
 }
 
 .center {

@@ -16,56 +16,68 @@
 					
 					<h2><strapi:pprlsParticipationHeader/></h2>
 					<util:markdown2html><strapi:pprlsParticipationBlock1/></util:markdown2html>
+					<div class="center">
 					<jsp:include page="../files/related_image_pos.jsp">
 						<jsp:param name="id" value="1" />
 						<jsp:param name="type" value="api::pprl.pprl" />
 						<jsp:param name="field" value="image1" />
 						<jsp:param name="pos" value="1" />
-						<jsp:param name="format" value="thumbnail" />
+						<jsp:param name="format" value="medium" />
 					</jsp:include>
+					</div>
 					<util:markdown2html><strapi:pprlsParticipationBlock2/></util:markdown2html>
+					<div class="center">
 					<jsp:include page="../files/related_image_pos.jsp">
 						<jsp:param name="id" value="1" />
 						<jsp:param name="type" value="api::pprl.pprl" />
 						<jsp:param name="field" value="image2" />
 						<jsp:param name="pos" value="1" />
-						<jsp:param name="format" value="thumbnail" />
+						<jsp:param name="format" value="medium" />
 					</jsp:include>
+					</div>
 					<util:markdown2html><strapi:pprlsParticipationBlock3/></util:markdown2html>
+					<div class="center">
 					<jsp:include page="../files/related_image_pos.jsp">
 						<jsp:param name="id" value="1" />
 						<jsp:param name="type" value="api::pprl.pprl" />
 						<jsp:param name="field" value="image3" />
 						<jsp:param name="pos" value="1" />
-						<jsp:param name="format" value="thumbnail" />
+						<jsp:param name="format" value="medium" />
 					</jsp:include>
+					</div>
 					<util:markdown2html><strapi:pprlsParticipationBlock4/></util:markdown2html>
+					<div class="center">
 					<jsp:include page="../files/related_image_pos.jsp">
 						<jsp:param name="id" value="1" />
 						<jsp:param name="type" value="api::pprl.pprl" />
 						<jsp:param name="field" value="image4" />
 						<jsp:param name="pos" value="1" />
-						<jsp:param name="format" value="thumbnail" />
+						<jsp:param name="format" value="medium" />
 					</jsp:include>
+					</div>
 					<util:markdown2html><strapi:pprlsParticipationBlock5/></util:markdown2html>
 					
 					<h2><strapi:pprlsGovernanceHeader/></h2>
 					<util:markdown2html><strapi:pprlsGovernanceBlock1/></util:markdown2html>
+					<div class="center">
 					<jsp:include page="../files/related_image_pos.jsp">
 						<jsp:param name="id" value="1" />
 						<jsp:param name="type" value="api::pprl.pprl" />
 						<jsp:param name="field" value="governance_image1" />
 						<jsp:param name="pos" value="1" />
-						<jsp:param name="format" value="thumbnail" />
+						<jsp:param name="format" value="medium" />
 					</jsp:include>
+					</div>
 					<util:markdown2html><strapi:pprlsGovernanceBlock2/></util:markdown2html>
+					<div class="center">
 					<jsp:include page="../files/related_image_pos.jsp">
 						<jsp:param name="id" value="1" />
 						<jsp:param name="type" value="api::pprl.pprl" />
 						<jsp:param name="field" value="governance_image2" />
 						<jsp:param name="pos" value="1" />
-						<jsp:param name="format" value="thumbnail" />
+						<jsp:param name="format" value="medium" />
 					</jsp:include>
+					</div>
 					<util:markdown2html><strapi:pprlsGovernanceBlock3/></util:markdown2html>
 					
 					<h2><strapi:pprlsFaqHeader/></h2>

@@ -18,8 +18,13 @@
 							</jsp:include>
 						</strapi:accountCreationsIntroLinks>
 					</strapi:foreachAccountCreationsIntroLinks>
-					<h2><strapi:accountCreationsHeader2/></h2>
+					
+					<div class="center shade">
+						<h3><strapi:accountCreationsBeforeStartingHeader/></h3>
+						<util:markdown2html><strapi:accountCreationsBeforeStartingBlock/></util:markdown2html>
+					</div>
 
+					<h2><strapi:accountCreationsHeader2/></h2>
 					<strapi:foreachAccountCreationsInstructionsLinks var="x" sortCriteria="content_image_block_right_order">
 						<strapi:accountCreationsInstructionsLinks>
 							<jsp:include page="../blocks/text_right.jsp">

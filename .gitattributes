@@ -21,6 +21,7 @@ WebContent/about/misson.jsp -text
 WebContent/about/news.jsp -text
 WebContent/about/news_logo.jsp -text
 WebContent/about/presentations.jsp -text
+WebContent/account-instructions/checklist.jsp -text
 WebContent/account-instructions/index.jsp -text
 WebContent/acknowledgements/index.jsp -text
 WebContent/bio/headshot.jsp -text

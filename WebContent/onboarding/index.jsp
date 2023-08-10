@@ -14,16 +14,9 @@
 							<jsp:param name="type" value="api::onboarding.onboarding" />
 							<jsp:param name="field" value="left_header_image" />
 							<jsp:param name="pos" value="1" />
-							<jsp:param name="format" value="thumbnail" />
+							<jsp:param name="format" value="5%" />
 						</jsp:include>
 						<strapi:onboardingsSubheader />
-						<jsp:include page="../files/related_image_pos.jsp">
-							<jsp:param name="id" value="1" />
-							<jsp:param name="type" value="api::onboarding.onboarding" />
-							<jsp:param name="field" value="right_header_image" />
-							<jsp:param name="pos" value="1" />
-							<jsp:param name="format" value="thumbnail" />
-						</jsp:include>
 					</h2>
 					
 					<h2><strapi:onboardingsRegistrationHeader/></h2>
@@ -41,9 +34,12 @@
 					<div class="row flex-wrap">
 						<strapi:foreachOnboardingsNavTilesLinks var="x" sortCriteria="nav_tile_order">
 							<strapi:onboardingsNavTilesLinks>
+							<div class="col-3">
 								<jsp:include page="../blocks/nav_tile.jsp">
 									<jsp:param value="${tag_onboardingsNavTilesLinks.navTileId}" name="id" />
+									<jsp:param value="top" name="image_pos" />
 								</jsp:include>
+							</div>
 							</strapi:onboardingsNavTilesLinks>
 						</strapi:foreachOnboardingsNavTilesLinks>
 					</div>
@@ -52,9 +48,7 @@
 						<strapi:onboardingsBlock/>
 					</div>
 				
-					<div class="row">
-						<strapi:onboardingsBlock2/>
-					</div>
+					<util:markdown2html><strapi:onboardingsBlock2/></util:markdown2html>
 				</strapi:onboardings>
 			</div>
 		</div>

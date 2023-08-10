@@ -5,7 +5,7 @@
 	<div class="container-fluid">
 		<jsp:include page="../header.jsp" />
 		<strapi:presentations ID="1">
-			<div class="row flex-wrap">
+			<div class="row flex-wrap main-block">
 				<strapi:foreachPresentationsYouTubeVideosLinks var="idIter" sortCriteria="you_tube_video_order">
 					<strapi:presentationsYouTubeVideosLinks>
 						<div class="col-6">

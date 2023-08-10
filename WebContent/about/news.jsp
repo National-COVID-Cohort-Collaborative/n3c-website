@@ -10,7 +10,7 @@
 		<strapi:foreachNewsItemsPressReleasesLinks var="items">
 			<strapi:newsItemsPressReleasesLinks>
 				<strapi:pressReleases ID="${tag_newsItemsPressReleasesLinks.pressReleaseId}">
-					<div class="row flex-nowrap">
+					<div class="row flex-nowrap main-block">
 						<div class="col col-3">
 							<jsp:include page="news_logo.jsp">
 								<jsp:param name="id" value="${tag_pressReleases.ID}" />
