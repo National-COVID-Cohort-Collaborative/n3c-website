@@ -46,6 +46,24 @@ td {
 	max-width:750px;
 }
 
+.left-nav-bar {
+	max-width: 15%;
+    background-color:Gainsboro;
+    position: fixed
+}
+
+.scrollingHeading {
+	margin-top:25px;
+	margin-bottom:5px;
+	border-bottom-style: solid;
+}
+
+.scrollingItem {
+	margin-top:5px;
+	margin-bottom:5px;
+	border-bottom-style: solid;
+}
+
 .main-block {
 	margin-top:10px;
 	margin-bottom:10px;
@@ -56,6 +74,12 @@ td {
 .block {
 	margin-top:20px;
 	margin-bottom:20px;
+}
+
+.right-block {
+	margin-top:20px;
+	margin-bottom:20px;
+	margin-left: 20%;
 }
 
 .subblock {

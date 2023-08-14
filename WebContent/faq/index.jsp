@@ -4,13 +4,43 @@
 <body>
 	<div class="container-fluid">
 		<jsp:include page="../header.jsp" />
-			<div class="main-block">
+		<div class="row flex-nowrap main-block">
+			<div class="col-2 left-nav-bar">
+				<div id="navigation">
+					<div class="scrollingHeading">
+						<span><strong>Contents:</strong></span>
+					</div>
+					<div class="scrollingItem">
+						<span><a class="nav-link" href="#related-links">Related Links</a></span>
+					</div>
+					<div class="scrollingItem">
+						<span><a class="nav-link" href="#data-enclave">N3C Data Enclave</a></span>
+					</div>
+					<div class="scrollingItem">
+						<span><a class="nav-link" href="#domain-teams">Domain Teams</a></span>
+					</div>
+					<div class="scrollingItem">
+						<span><a class="nav-link" href="#phenotype">PhenoType &amp; Data Acquisition</a></span>
+					</div>
+					<div class="scrollingItem">
+						<span><a class="nav-link" href="#ingestion">Data Ingestion &amp; Harmonization</a></span>
+					</div>
+					<div class="scrollingItem">
+						<span><a class="nav-link" href="#analytics">Collaborative Analytics</a></span>
+					</div>
+					<div class="scrollingItem">
+						<span><a class="nav-link" href="#synthetic">Synthetic Data</a></span>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-10 right-block">
 				<strapi:faqLists ID="1">
-					<h1><strapi:faqListsHeader /></h1>
+					<h1 id="related-links"><strapi:faqListsHeader /></h1>
 					<h2><strapi:faqListsSubheader /></h2>
 					<util:markdown2html><strapi:faqListsIntroBlock /></util:markdown2html>
 
-					<h2><strapi:faqListsEnclaveHeader /></h2>
+					<h2 id="data-enclave"><strapi:faqListsEnclaveHeader /></h2>
 					<div class="accordion" id="enclaveAccordian">
 						<strapi:foreachFaqListsEnclaveFaqsLinks var="x" sortCriteria="faq_order">
 							<strapi:faqListsEnclaveFaqsLinks>
@@ -24,7 +54,7 @@
 						</strapi:foreachFaqListsEnclaveFaqsLinks>
 					</div>
 
-					<h2><strapi:faqListsDomainHeader /></h2>
+					<h2 id="domain-teams"><strapi:faqListsDomainHeader /></h2>
 					<div class="accordion" id="domainAccordian">
 						<strapi:foreachFaqListsDomainFaqsLinks var="x" sortCriteria="faq_order">
 							<strapi:faqListsDomainFaqsLinks>
@@ -38,7 +68,7 @@
 						</strapi:foreachFaqListsDomainFaqsLinks>
 					</div>
 
-					<h2><strapi:faqListsPhenotypeHeader /></h2>
+					<h2 id="phenotype"><strapi:faqListsPhenotypeHeader /></h2>
 					<div class="accordion" id="phenotypeAccordian">
 						<strapi:foreachFaqListsPhenotypeFaqsLinks var="x" sortCriteria="faq_order">
 							<strapi:faqListsPhenotypeFaqsLinks>
@@ -52,7 +82,7 @@
 						</strapi:foreachFaqListsPhenotypeFaqsLinks>
 					</div>
 
-					<h2><strapi:faqListsHarmonizationHeader /></h2>
+					<h2 id="ingestion"><strapi:faqListsHarmonizationHeader /></h2>
 					<div class="accordion" id="harmonizationAccordian">
 						<strapi:foreachFaqListsHarmonizationFaqsLinks var="x" sortCriteria="faq_order">
 							<strapi:faqListsHarmonizationFaqsLinks>
@@ -66,7 +96,7 @@
 						</strapi:foreachFaqListsHarmonizationFaqsLinks>
 					</div>
 
-					<h2><strapi:faqListsAnalyticsHeader /></h2>
+					<h2 id="analytics"><strapi:faqListsAnalyticsHeader /></h2>
 					<div class="accordion" id="analyticsAccordian">
 						<strapi:foreachFaqListsAnalyticsFaqsLinks var="x" sortCriteria="faq_order">
 							<strapi:faqListsAnalyticsFaqsLinks>
@@ -80,7 +110,7 @@
 						</strapi:foreachFaqListsAnalyticsFaqsLinks>
 					</div>
 
-					<h2><strapi:faqListsSyntheticHeader /></h2>
+					<h2 id="synthetic"><strapi:faqListsSyntheticHeader /></h2>
 					<div class="accordion" id="syntheticAccordian">
 						<strapi:foreachFaqListsSyntheticFaqsLinks var="x" sortCriteria="faq_order">
 							<strapi:faqListsSyntheticFaqsLinks>
@@ -97,6 +127,6 @@
 			</div>
 		</div>
 		<jsp:include page="../footer.jsp" />
-
+	</div>
 </body>
 </html>

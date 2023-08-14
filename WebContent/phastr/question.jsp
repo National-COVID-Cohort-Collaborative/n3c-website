@@ -6,7 +6,7 @@
 		<jsp:include page="../header.jsp" />
 		<div class="row flex-nowrap">
 			<strapi:publicHealthQuestions ID="${param.id}">
-				<div class="col-xs-8">
+				<div class="main-block">
 					<h1><strapi:publicHealthQuestionsTitle /></h1>
 					<h2>Contract Description</h2>
 					<util:markdown2html><strapi:publicHealthQuestionsDescription /></util:markdown2html>
