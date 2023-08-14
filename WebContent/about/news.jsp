@@ -7,7 +7,7 @@
 		<jsp:include page="../header.jsp" />
 	</div>
 	<strapi:newsItems ID="1">
-		<strapi:foreachNewsItemsPressReleasesLinks var="items">
+		<strapi:foreachNewsItemsPressReleasesLinks var="items" sortCriteria="press_release_order desc">
 			<strapi:newsItemsPressReleasesLinks>
 				<strapi:pressReleases ID="${tag_newsItemsPressReleasesLinks.pressReleaseId}">
 					<div class="row flex-nowrap main-block">
