@@ -4,22 +4,6 @@
 	<div class="row" style="width: 100%; overflow: hidden; font-size: 18px; margin: auto;">
 		<div class="col-xs-12 col-sm-6 col-md-3 abt-count">
 			<h2 style="padding-top: 5px;">
-				<span id="rows_top">0</span>
-			</h2>
-
-			<p style="font-style: italic;">Total Rows</p>
-		</div>
-
-		<div class="col-xs-12 col-sm-6 col-md-3 abt-count">
-			<h2 style="padding-top: 5px;">
-				<span id="obs_top">0</span>
-			</h2>
-
-			<p style="font-style: italic;">Clinical Observations</p>
-		</div>
-
-		<div class="col-xs-12 col-sm-6 col-md-3 abt-count">
-			<h2 style="padding-top: 5px;">
 				<span id="people_top">0</span>
 			</h2>
 
@@ -32,6 +16,22 @@
 			</h2>
 
 			<p style="font-style: italic;">COVID+ Cases</p>
+		</div>
+
+		<div class="col-xs-12 col-sm-6 col-md-3 abt-count">
+			<h2 style="padding-top: 5px;">
+				<span id="rows_top">0</span>
+			</h2>
+
+			<p style="font-style: italic;">Total Rows</p>
+		</div>
+
+		<div class="col-xs-12 col-sm-6 col-md-3 abt-count">
+			<h2 style="padding-top: 5px;">
+				<span id="obs_top">0</span>
+			</h2>
+
+			<p style="font-style: italic;">Clinical Observations</p>
 		</div>
 
 	</div>

@@ -30,11 +30,12 @@
 }
 
 #social-icons ul {
-list-style: none;
+	padding-top: 20px;
+	list-style: none;
 }
 
 #social-icons li {
-display: inline;
+	display: inline;
 }
 
 </style>
@@ -66,14 +67,14 @@ display: inline;
 			<util:markdown2html><strapi:footersSignup /></util:markdown2html>
 		</div>
 		<div class="row footer-social">
-			<util:markdown2html><strapi:footersSocial /></util:markdown2html>
-			<ul id="social-icons">
-				<li><a href="mailto:cd2h@ohsu.edu"> <i class="fa fa-envelope" aria-hidden="true"></i></a></li>
-				<li><a href="https://twitter.com/data2health?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"> <i class="fab fa-twitter-square"></i></a></li>
-				<li><a href="https://join.slack.com/t/cd2h/signup"> <i class="fab fa-slack"></i></a></li>
-				<li><a href="https://github.com/data2health"><i class="fab fa-github-square"></i></a></li>
-			</ul>
-
+			<div class="center">
+				<ul id="social-icons">
+					<li><a href="mailto:cd2h@ohsu.edu"> <i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+					<li><a href="https://twitter.com/data2health?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"> <i class="fab fa-twitter-square"></i></a></li>
+					<li><a href="https://join.slack.com/t/cd2h/signup"> <i class="fab fa-slack"></i></a></li>
+					<li><a href="https://github.com/data2health"><i class="fab fa-github-square"></i></a></li>
+				</ul>
+			</div>
 		</diV>
 	</strapi:footers>
 </div>

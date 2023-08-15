@@ -127,3 +127,24 @@ td {
     margin-top: 0;
  }
  
+ .carousel {
+ 	padding-bottom: 40px;
+ }
+ 
+ .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
+.carousel-indicators {
+	color: #000;
+	background-color: #000;
+    bottom: -150px;
+}
+
+.carousel-control-prev-icon {
+	color: #000;
+	background-color: #000;
+}
+ 

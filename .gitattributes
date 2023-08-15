@@ -67,6 +67,11 @@ WebContent/google-calendar/index.jsp -text
 WebContent/head.jsp -text
 WebContent/header.jsp -text
 WebContent/index.jsp -text
+WebContent/landing/calendar.jsp -text
+WebContent/landing/carousel.jsp -text
+WebContent/landing/dashboard_spotlight.jsp -text
+WebContent/landing/enclave_stats.jsp -text
+WebContent/landing/quotes.jsp -text
 WebContent/liaisons/index.jsp -text
 WebContent/n3c-brochure/index.jsp -text
 WebContent/nav-bars/dynamic.jsp -text
