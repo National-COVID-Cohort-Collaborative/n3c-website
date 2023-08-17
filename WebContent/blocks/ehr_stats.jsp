@@ -1,3 +1,5 @@
+<%@ include file="../_include.jsp"%>
+
 <div class="content-about plugin-content" id="content-stats">
 	<div class="row counts"	style="display: flex; margin-top: 0px; padding: 5px; padding-bottom: 5px; flex-wrap: wrap; border: 2px solid #bccfd6; background: #f1f4f5; margin-left: 0px; margin-right: 0px; text-align: center;">
 	<h2>Patient Stats</h2>
@@ -38,7 +40,7 @@
 </div>
 </div>
 
-<script type="text/javascript" src="/n3c-website/resources/countUp.min.js?v=1.9.3"></script>
+<script type="text/javascript" src="<util:applicationRoot/>/resources/countUp.min.js?v=1.9.3"></script>
 <script>
 
 	$.getJSON("https://covid.cd2h.org/dashboard/feeds/embedded_enclave_metrics.jsp", function(json){

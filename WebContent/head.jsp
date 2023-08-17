@@ -9,14 +9,14 @@
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<!-- bootstrap CSS -->
-	<link href="/n3c-website/resources/bootstrap/css/bootstrap.css" rel="stylesheet">
+	<link href="<util:applicationRoot/>/resources/bootstrap/css/bootstrap.css" rel="stylesheet">
 	<link rel="stylesheet" id='font-awesome' href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	
-	<link rel="stylesheet" type="text/css" href="/n3c-dashboard-admin/resources/DataTables/css/jquery.dataTables.min.css">
-	<script type="text/javascript" charset="utf8" src="/n3c-dashboard-admin/resources/DataTables/js/jquery.dataTables.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="<util:applicationRoot/>/resources/DataTables/css/jquery.dataTables.min.css">
+	<script type="text/javascript" charset="utf8" src="<util:applicationRoot/>/resources/DataTables/js/jquery.dataTables.min.js"></script>
 	
 	<!-- bootstrap Latest compiled JavaScript -->
-	<script type='text/javascript' src='/n3c-website/resources/bootstrap/js/bootstrap.bundle.min.js '></script>
+	<script type='text/javascript' src='<util:applicationRoot/>/resources/bootstrap/js/bootstrap.bundle.min.js '></script>
 	
 	<!-- Slick library -->
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
