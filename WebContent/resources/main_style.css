@@ -147,4 +147,8 @@ td {
 	color: #000;
 	background-color: #000;
 }
- 
+
+.slick-slide
+{
+    height: inherit !important;
+}

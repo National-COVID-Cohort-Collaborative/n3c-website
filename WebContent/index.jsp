@@ -15,7 +15,7 @@
 		
 		<jsp:include page="landing/researchers.jsp"/>
 		
-		<jsp:include page="landing/quotes.jsp"/>
+		<jsp:include page="landing/testimonials.jsp"/>
 		
 		<jsp:include page="landing/dashboard_spotlight.jsp"/>
 		
