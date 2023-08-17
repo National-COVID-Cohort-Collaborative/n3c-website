@@ -20,7 +20,7 @@
 							<div class="card hover-card_noshadow mb-2">
 								<div class="card-body card-body-links">
 									<strapi:domainTeams ID="${tag_landingPagesDomainTeamsLinks.domainTeamId}">
-										<h3><strapi:domainTeamsName /></h3>
+										<h3><a href="domain-teams/team.jsp?id=<strapi:domainTeamsID/>"><strapi:domainTeamsName /></a></h3>
 										<util:markdown2html><strapi:domainTeamsSummary/></util:markdown2html>
 									</strapi:domainTeams>
 								</div>
@@ -49,7 +49,7 @@ $(document).ready(function(){
 		draggable: true,
 		slidesToShow: 3,
 		infinite: false,
-		slidesToScroll: 1,
+		slidesToScroll: 3,
 		centerMode: false,
 		centerPadding: '40px',
 		autoplay: false,
