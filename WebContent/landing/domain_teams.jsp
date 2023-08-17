@@ -1,4 +1,10 @@
 <%@ include file="../_include.jsp"%>
+<style>
+.slick-slide
+{
+    height: inherit !important;
+}
+</style>
 
 	<jsp:include page="../files/image.jsp">
 		<jsp:param name="id" value="710" />
@@ -75,7 +81,14 @@ function adjust_domain_team_card_height(slick){
 	//slick cards resize so they are the same height as largest (need to repeate for each new carousel)
 	//Get cards
 	var cards = $('.' + slick + ' .card');
-	var maxHeight = 200;
+	var maxHeight = 0;
+
+	// Loop all cards and check height, if bigger than max then save it
+	for (var i = 0; i < cards.length; i++) {
+		if (maxHeight < $(cards[i]).outerHeight()) {
+    		maxHeight = $(cards[i]).outerHeight();
+  		}
+	}
 
 	// Set ALL card bodies to this height
 	console.log(maxHeight);

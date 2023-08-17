@@ -4,7 +4,7 @@
 	<div class="col-4">
 		<jsp:include page="../files/image.jsp">
 			<jsp:param name="id" value="697" />
-			<jsp:param name="format" value="50%" />
+			<jsp:param name="format" value="60%" />
 		</jsp:include>
 	</div>
 	<div class="col-8">

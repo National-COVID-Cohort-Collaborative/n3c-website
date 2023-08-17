@@ -17,6 +17,8 @@
 		
 		<jsp:include page="landing/quotes.jsp"/>
 		
+		<jsp:include page="landing/dashboard_spotlight.jsp"/>
+		
 		<jsp:include page="landing/domain_teams.jsp"/>
 		
 		<jsp:include page="landing/calendar.jsp"/>
