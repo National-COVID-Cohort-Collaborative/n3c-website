@@ -9,11 +9,15 @@
 
 		<jsp:include page="landing/carousel.jsp"/>
 		
+		<jsp:include page="landing/intro.jsp"/>
+		
 		<jsp:include page="landing/enclave_stats.jsp"/>
+		
+		<jsp:include page="landing/researchers.jsp"/>
 		
 		<jsp:include page="landing/quotes.jsp"/>
 		
-		<jsp:include page="landing/dashboard_spotlight.jsp"/>
+		<jsp:include page="landing/domain_teams.jsp"/>
 		
 		<jsp:include page="landing/calendar.jsp"/>
 	</div>

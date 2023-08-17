@@ -28,7 +28,7 @@
 			<img class="${param.clss}" src="<util:propertyValue propertyFile="strapi" name="strapi-path"/>${row.thumbnail}"/>
 		</c:when>
 		<c:otherwise>
-			<img class="${param.clss}" src="<util:propertyValue propertyFile="strapi" name="strapi-path"/>${row.small}" style="width: ${param.format}"/>
+			<img class="${param.clss}" src="<util:propertyValue propertyFile="strapi" name="strapi-path"/>${row.large}" style="width: ${param.format}"/>
 		</c:otherwise>
 	</c:choose>
 	${row.jsonb_pretty}
