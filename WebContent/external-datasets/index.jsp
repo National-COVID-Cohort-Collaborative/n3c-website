@@ -18,8 +18,19 @@
 							</jsp:include>
 						</strapi:externalDatasetsDescriptionLinks>
 					</strapi:foreachExternalDatasetsDescriptionLinks>
+						<div class="row flex-wrap">
+							<div class="col-3 center">
+								<a href="#browse" class="btn btn-primary btn-n3c active" role="button" aria-pressed="true">Browse Datasets</a>
+							</div>
+							<div class="col-3 center">
+								<a href="#request" class="btn btn-primary btn-n3c active" role="button" aria-pressed="true">Request Datasets</a>
+							</div>
+							<div class="col-3 center">
+								<a href="#support" class="btn btn-primary btn-n3c active" role="button" aria-pressed="true">Dataset Support</a>
+							</div>
+						</div>
 
-					<div class="row flex-nowrap">
+					<div class="row flex-nowrap" id="browse">
 						<div class="col-6">
 							<util:markdown2html><strapi:externalDatasetsBlock1/></util:markdown2html>
 						</div>
@@ -35,6 +46,7 @@
 						</div>
 					</div>
 
+					<div id="request"></div>
 					<strapi:foreachExternalDatasetsIngestionLinks var="x">
 						<strapi:externalDatasetsIngestionLinks>
 							<jsp:include page="../blocks/text_right.jsp">
@@ -55,6 +67,7 @@
 						</jsp:include>
 					</div>
 
+					<div id="support"></div>
 					<strapi:foreachExternalDatasetsSupportLinks var="x">
 						<strapi:externalDatasetsSupportLinks>
 							<jsp:include page="../blocks/text_left.jsp">

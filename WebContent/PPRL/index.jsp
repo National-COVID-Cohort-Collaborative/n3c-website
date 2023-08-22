@@ -47,6 +47,14 @@
 				<strapi:pprls ID="1">
 					<h1><strapi:pprlsHeader/></h1>
 					<h2><strapi:pprlsSubheader/></h2>
+						<div class="row flex-wrap">
+							<div class="col-4 center">
+								<a href="https://discovery.biothings.io/dataset?guide=/guide/n3c/dataset" class="btn btn-primary btn-n3c active" role="button" aria-pressed="true">Browse PPRL Datasets</a>
+							</div>
+							<div class="col-4 center">
+								<a href="https://doi.org/doi:10.5281/zenodo.5165212" class="btn btn-primary btn-n3c active" role="button" aria-pressed="true">Access PPRL Governance Documents</a>
+							</div>
+						</div>
 					<util:markdown2html><strapi:pprlsStart/></util:markdown2html>
 					
 					<h2 id="introduction"><strapi:pprlsIntroHeader/></h2>

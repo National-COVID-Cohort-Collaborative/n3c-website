@@ -235,6 +235,7 @@ WebContent/resources/tinymce/tinymce.d.ts -text
 WebContent/resources/tinymce/tinymce.min.js -text
 WebContent/standards/index.jsp -text
 WebContent/support/index.jsp -text
+WebContent/team-creation/index.jsp -text
 WebContent/tools/index.jsp -text
 WebContent/training/index.jsp -text
 WebContent/tutorials/index.jsp -text
