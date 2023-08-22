@@ -110,7 +110,7 @@
     <li class="nav-actions-container">
         <a href="https://unite.nih.gov/">Enclave Sign In</a>
         <span>&nbsp;|&nbsp;</span>
-        <a href="/account-instructions">Create Account</a>
+        <a href="<util:applicationRoot/>/account-instructions">Create Account</a>
         <span>&nbsp;|&nbsp;</span>
         <a href="https://labs.cd2h.org/registration/dologin.jsp">Profile</a>
     </li>

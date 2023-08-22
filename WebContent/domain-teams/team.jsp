@@ -31,8 +31,20 @@
 					</div>
 				</div>
 				<div class="row flex-wrap">
+					<strapi:foreachDomainTeamsYouTubeVideosLinks var="x">
+						<strapi:domainTeamsYouTubeVideosLinks>
+						<div class="col-6">
+							<jsp:include page="../youtube/video.jsp">
+								<jsp:param value="${tag_domainTeamsYouTubeVideosLinks.youTubeVideoId }" name="id" />
+							</jsp:include>
+						</div>
+						</strapi:domainTeamsYouTubeVideosLinks>
+					</strapi:foreachDomainTeamsYouTubeVideosLinks>
+				</div>
+				<p></p>
+				<div class="row flex-wrap">
 					<div class="col-12">
-						<div class="center">
+						<div class="block center">
 							<b>First Time Users:</b> To get started with N3C and gain access to the N3C Data Enclave, please view the <a href="<util:applicationRoot/>/for-researchers">Researcher Essentials</a> webpage.
 							<br>
 							<b>For Questions or Comments:</b> Please access the <a href="https://n3c-help.atlassian.net/servicedesk/customer/portal/2">N3C Support Desk</a> and click on "Request Domain Team Support".

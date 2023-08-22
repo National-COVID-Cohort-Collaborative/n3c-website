@@ -21,7 +21,7 @@
 				</h2>
 
 				<p style="font-style: italic;">
-					<a href="/duas" style="color: #142b52; font-weight: 400;">Researcher Organizations <i aria-hidden="true" class="fa fa-external-link" style="color: #142b52; font-weight: 400; font-size: 18px;">&nbsp;</i></a>
+					<a href="<util:applicationRoot/>/duas" style="color: #142b52; font-weight: 400;">Researcher Organizations <i aria-hidden="true" class="fa fa-external-link" style="color: #142b52; font-weight: 400; font-size: 18px;">&nbsp;</i></a>
 				</p>
 			</div>
 
@@ -31,7 +31,7 @@
 				</h2>
 
 				<p style="font-style: italic;">
-					<a href="/projects" style="color: #142b52; font-weight: 400;">Projects <i aria-hidden="true" class="fa fa-external-link" style="color: #142b52; font-weight: 400; font-size: 18px;">&nbsp;</i></a>
+					<a href="<util:applicationRoot/>/projects" style="color: #142b52; font-weight: 400;">Projects <i aria-hidden="true" class="fa fa-external-link" style="color: #142b52; font-weight: 400; font-size: 18px;">&nbsp;</i></a>
 				</p>
 			</div>
 
@@ -41,7 +41,7 @@
 				</h2>
 
 				<p style="font-style: italic;">
-					<a href="/domain-teams" style="color: #142b52; font-weight: 400;">Domain Teams <i aria-hidden="true" class="fa fa-external-link" style="color: #142b52; font-weight: 400; font-size: 18px;">&nbsp;</i></a>
+					<a href="<util:applicationRoot/>/domain-teams" style="color: #142b52; font-weight: 400;">Domain Teams <i aria-hidden="true" class="fa fa-external-link" style="color: #142b52; font-weight: 400; font-size: 18px;">&nbsp;</i></a>
 				</p>
 			</div>
 		</div>
