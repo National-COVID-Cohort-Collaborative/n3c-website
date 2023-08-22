@@ -18,6 +18,10 @@
 				<h2><strapi:contentImageBlockLeftsHeader /></h2>
 			</c:if>
 			<util:markdown2html><strapi:contentImageBlockLeftsContent /></util:markdown2html>
+			<c:if test="${not empty tag_contentImageBlockLefts.url}">
+				<p></p>
+				<a href="<strapi:contentImageBlockLeftsUrl/>" class="btn btn-primary btn-n3c active" role="button" aria-pressed="true"><strapi:contentImageBlockLeftsUrlLabel/></a>
+			</c:if>
 		</div>
 		<div class="col-${right}">
 			<jsp:include page="../files/related_image.jsp">

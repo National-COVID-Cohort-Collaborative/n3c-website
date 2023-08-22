@@ -14,6 +14,9 @@
 			<div class="col col-9">
 				<h2><strapi:contentImageBlockLeftsHeader /></h2>
 				<util:markdown2html><strapi:contentImageBlockLeftsContent /></util:markdown2html>
+				<div class="center">
+					<a href="<strapi:contentImageBlockLeftsUrl/>"><strapi:contentImageBlockLeftsUrlLabel/></a>
+				</div>
 			</div>
 		</div>
 	</div>

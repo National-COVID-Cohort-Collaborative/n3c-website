@@ -5,6 +5,14 @@
 		<strapi:landingPages ID="1">
 			<util:markdown2html><strapi:landingPagesResearchers/></util:markdown2html>
 		</strapi:landingPages>
+		<div class="row flex-wrap">
+			<div class="col=6 center">
+				<a href="for-researchers/" class="btn btn-primary btn-n3c active" role="button" aria-pressed="true">Get Started with N3C</a>
+			</div>
+			<div class="col=6 center">
+				<a href="enclave/" class="btn btn-primary btn-n3c active" role="button" aria-pressed="true">Enclave Introduction</a>
+			</div>
+		</div>
 	</div>
 	<div class="col-4">
 		<div class="row flex-nowrap">

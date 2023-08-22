@@ -34,7 +34,7 @@
 			<img src="<util:propertyValue propertyFile="strapi" name="strapi-path"/>${row.thumbnail}"/>
 		</c:when>
 		<c:otherwise>
-			<img src="<util:propertyValue propertyFile="strapi" name="strapi-path"/>${row.url}"/>
+			<img src="<util:propertyValue propertyFile="strapi" name="strapi-path"/>${row.url}" style="width: ${param.format}"/>
 		</c:otherwise>
 	</c:choose>
 	${row.jsonb_pretty}

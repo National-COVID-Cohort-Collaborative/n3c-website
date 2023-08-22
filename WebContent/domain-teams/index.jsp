@@ -21,6 +21,14 @@
 				<div class="row flex-nowrap block">
 					<div class="col-6">
 						<util:markdown2html><strapi:domainsBlock2 /></util:markdown2html>
+						<div class="row flex-wrap">
+							<div class="col=6 center">
+								<a href="../team-creation/" class="btn btn-primary btn-n3c active" role="button" aria-pressed="true">Start a Domain Team</a>
+							</div>
+							<div class="col=6 center">
+								<a href="https://n3c-help.atlassian.net/servicedesk/customer/portal/2" class="btn btn-primary btn-n3c active" role="button" aria-pressed="true">Domain Team Support</a>
+							</div>
+						</div>
 					</div>
 					<div class="col-6">
 						<jsp:include page="../youtube/video.jsp">

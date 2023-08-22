@@ -21,6 +21,8 @@
 					</div>
 					<div class="col-7">
 						<util:markdown2html><strapi:aboutsBlock2 /></util:markdown2html>
+						<p></p>
+						<a href="https://labs.cd2h.org/registration/" class="btn btn-primary btn-n3c active" role="button" aria-pressed="true">Onboard to N3C</a>
 					</div>
 				</div>
 				<div class="row flex-nowrap block">
