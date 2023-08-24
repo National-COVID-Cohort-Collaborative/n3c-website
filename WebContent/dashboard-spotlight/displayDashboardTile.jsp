@@ -6,7 +6,7 @@
 <dashboard:dashboard did="${param.did}">
 	<div class="col-12 col-md-6 col-lg-4 d-flex">
 		<div class="card hover-card_noshadow mb-2" onclick="location.href='/dashboard/<dashboard:dashboardPath/>';">
-			<img src="<util:applicationRoot/>/dashboard/displayDashboardThumbnail.jsp?did=<dashboard:dashboardDid/>" class="card-img-top" alt="...">
+			<img src="<util:applicationRoot/>/dashboard-spotlight/displayDashboardThumbnail.jsp?did=<dashboard:dashboardDid/>" class="card-img-top" alt="...">
 			<div class="card-body card-body-links">
 				<p class="card-title">
 					<strong><dashboard:dashboardTitle /></strong>

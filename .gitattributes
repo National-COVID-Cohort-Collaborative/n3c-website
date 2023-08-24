@@ -40,9 +40,9 @@ WebContent/calendar/domain_teams.jsp -text
 WebContent/calendar/index.jsp -text
 WebContent/communications/index.jsp -text
 WebContent/contributors/index.jsp -text
-WebContent/dashboard/displayDashboardThumbnail.jsp -text
-WebContent/dashboard/displayDashboardTile.jsp -text
-WebContent/dashboard/spotlight.jsp -text
+WebContent/dashboard-spotlight/displayDashboardThumbnail.jsp -text
+WebContent/dashboard-spotlight/displayDashboardTile.jsp -text
+WebContent/dashboard-spotlight/spotlight.jsp -text
 WebContent/domain-teams/index.jsp -text
 WebContent/domain-teams/team.jsp -text
 WebContent/download/index.jsp -text
@@ -159,6 +159,7 @@ WebContent/resources/d3.v4.min.js -text
 WebContent/resources/images/logo.png -text
 WebContent/resources/main_style.css -text
 WebContent/resources/n3c_login_style.css -text
+WebContent/resources/test.jsp -text
 WebContent/resources/tinymce/icons/default/icons.min.js -text
 WebContent/resources/tinymce/jquery.tinymce.min.js -text
 WebContent/resources/tinymce/langs/README.md -text
