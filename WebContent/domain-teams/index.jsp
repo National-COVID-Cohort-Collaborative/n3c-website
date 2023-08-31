@@ -33,6 +33,7 @@
 					<div class="col-6">
 						<jsp:include page="../youtube/video.jsp">
 							<jsp:param value="2" name="id" />
+							<jsp:param value="false" name="footer" />
 						</jsp:include>
 					</div>
 				</div>
@@ -43,7 +44,7 @@
 						<strapi:foreachDomainsDomainTeamsLinks var="domains" sortCriteria="domain_team_order">
 							<strapi:domainsDomainTeamsLinks>
 								<strapi:domainTeams ID="${tag_domainsDomainTeamsLinks.domainTeamId}">
-									<div class="col-4">
+									<div class="card col-4 shade-blue">
 										<h3><a href="team.jsp?id=<strapi:domainTeamsID/>"><strapi:domainTeamsName /></a></h3>
 										<util:markdown2html><strapi:domainTeamsSummary /></util:markdown2html>
 									</div>
@@ -59,7 +60,7 @@
 						<strapi:foreachDomainsCrossCuttingTeamsLinks var="domains" sortCriteria="domain_team_order">
 							<strapi:domainsCrossCuttingTeamsLinks>
 								<strapi:domainTeams ID="${tag_domainsCrossCuttingTeamsLinks.domainTeamId}">
-									<div class="col-4">
+									<div class="card col-4 shade-blue">
 										<h3><a href="team.jsp?id=<strapi:domainTeamsID/>"><strapi:domainTeamsName /></a></h3>
 										<util:markdown2html><strapi:domainTeamsSummary /></util:markdown2html>
 									</div>

@@ -2,36 +2,36 @@
 
 <div class="content-about plugin-content" id="content-stats">
 	<div class="row counts"	style="display: flex; margin-top: 0px; padding: 5px; padding-bottom: 5px; flex-wrap: wrap; border: 2px solid #bccfd6; background: #f1f4f5; margin-left: 0px; margin-right: 0px; text-align: center;">
-	<h2>Patient Stats</h2>
+	<h3>Patient Stats</h3>
 	<div class="row" style="width: 100%; overflow: hidden; font-size: 18px; margin: auto;">
 		<div class="col-xs-12 col-sm-6 col-md-3 abt-count">
-			<h2 style="padding-top: 5px;">
+			<h3 style="padding-top: 5px;">
 				<span id="people_top">0</span>
-			</h2>
+			</h3>
 
 			<p style="font-style: italic;">Persons</p>
 		</div>
 
 		<div class="col-xs-12 col-sm-6 col-md-3 abt-count">
-			<h2 style="padding-top: 5px;">
+			<h3 style="padding-top: 5px;">
 				<span id="cases_top">0</span>
-			</h2>
+			</h3>
 
 			<p style="font-style: italic;">COVID+ Cases</p>
 		</div>
 
 		<div class="col-xs-12 col-sm-6 col-md-3 abt-count">
-			<h2 style="padding-top: 5px;">
+			<h3 style="padding-top: 5px;">
 				<span id="rows_top">0</span>
-			</h2>
+			</h3>
 
 			<p style="font-style: italic;">Total Rows</p>
 		</div>
 
 		<div class="col-xs-12 col-sm-6 col-md-3 abt-count">
-			<h2 style="padding-top: 5px;">
+			<h3 style="padding-top: 5px;">
 				<span id="obs_top">0</span>
-			</h2>
+			</h3>
 
 			<p style="font-style: italic;">Clinical Observations</p>
 		</div>

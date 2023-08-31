@@ -4,6 +4,7 @@
 		<strapi:workstreamInstancesNavTilesLinks>
 			<jsp:include page="../../blocks/nav_tile.jsp">
 				<jsp:param value="${tag_workstreamInstancesNavTilesLinks.navTileId}" name="id" />
+				<jsp:param value="50px" name="format"/>
 			</jsp:include>
 		</strapi:workstreamInstancesNavTilesLinks>
 	</strapi:foreachWorkstreamInstancesNavTilesLinks>

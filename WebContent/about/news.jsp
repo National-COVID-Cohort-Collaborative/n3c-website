@@ -6,11 +6,13 @@
 	<div class="container-fluid">
 		<jsp:include page="../header.jsp" />
 	</div>
+	<div class="main-block">
 	<strapi:newsItems ID="1">
+		<h2>N3C in the News</h2>
 		<strapi:foreachNewsItemsPressReleasesLinks var="items" sortCriteria="press_release_order desc">
 			<strapi:newsItemsPressReleasesLinks>
 				<strapi:pressReleases ID="${tag_newsItemsPressReleasesLinks.pressReleaseId}">
-					<div class="row flex-nowrap main-block">
+					<div class="row flex-nowrap">
 						<div class="col col-3">
 							<jsp:include page="news_logo.jsp">
 								<jsp:param name="id" value="${tag_pressReleases.ID}" />
@@ -18,7 +20,7 @@
 							</jsp:include>
 						</div>
 						<div class="col col-9">
-							<h2><a href="<strapi:pressReleasesUrl/>"><strapi:pressReleasesTitle/></a></h2>
+							<h4><a href="<strapi:pressReleasesUrl/>"><strapi:pressReleasesTitle/></a></h4>
 							<util:markdown2html><strapi:pressReleasesDescription/></util:markdown2html>
 						</div>
 					</div>
@@ -26,6 +28,7 @@
 			</strapi:newsItemsPressReleasesLinks>
 		</strapi:foreachNewsItemsPressReleasesLinks>
 	</strapi:newsItems>
+	</div>
 	<jsp:include page="../footer.jsp" />
 </body>
 </html>

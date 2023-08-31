@@ -3,26 +3,31 @@
 .footer-block {
 	color: #ffffff;
 	background-color: #3e6a7b;
-	padding-bottom: 10px;
+	padding-top: 15px;
+}
+
+.footer-block a {
+	color: yellow;
 }
 
 .footer-social {
 	color: #ffffff;
 	background-color: #142b52;
-	padding-bottom: 10px;
+	padding-top: 10px;
+	padding-bottom: 5px;
 }
 
 .footer-hr {
+	color: #ffffff;
+	background-color: #3e6a7b;
 	margin-top: 5px;
-	margin-bottom: 5px;
 	border: 0;
 	border-top: 1px solid #ffff;
 }
 
 .footer-center {
-  margin: auto;
-  width: 70%;
-  padding: 10px;
+	margin: auto;
+	width: 70%;
 }
 
 #credits-footer p {
@@ -37,7 +42,6 @@
 #social-icons li {
 	display: inline;
 }
-
 </style>
 
 <div class="container-fluid">
@@ -45,7 +49,7 @@
 		<div class="row footer-block">
 			<div class="col-xs-12 col-md-3">
 				<strapi:files ID="51">
-					<img alt="" src="<util:propertyValue propertyFile="strapi" name="strapi-path"/><strapi:filesUrl/>" style="padding:20px; max-width:300px; margin:auto; align-self:flex-start;">
+					<img alt="" src="<util:propertyValue propertyFile="strapi" name="strapi-path"/><strapi:filesUrl/>" style="padding: 20px; max-width: 300px; margin: auto; align-self: flex-start;">
 				</strapi:files>
 			</div>
 			<div class="col-xs-12 col-md-9">
@@ -56,15 +60,17 @@
 			</div>
 		</div>
 		<div class="row footer-block">
-		<div id="credits-footer" class="footer-center">
-			<util:markdown2html><strapi:footersCredits /></util:markdown2html>
-		</div>
+			<div id="credits-footer" class="footer-center">
+				<util:markdown2html><strapi:footersCredits /></util:markdown2html>
+			</div>
 			<div class="col col-12 p-0">
 				<hr class="footer-hr">
 			</div>
 		</div>
 		<div class="row footer-block">
-			<util:markdown2html><strapi:footersSignup /></util:markdown2html>
+			<div class="col-xs-12 col-md-3">
+				<util:markdown2html><strapi:footersSignup /></util:markdown2html>
+			</div>
 		</div>
 		<div class="row footer-social">
 			<div class="center">

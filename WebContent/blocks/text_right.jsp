@@ -30,7 +30,7 @@
 								<jsp:param name="type" value="${param.type}" />
 								<jsp:param name="field" value="${param.field}" />
 								<jsp:param name="pos" value="${pos}" />
-								<jsp:param name="format" value="thumbnail" />
+								<jsp:param name="format" value="auto" />
 							</jsp:include>
 						</a>
 					</div>
@@ -41,17 +41,26 @@
 						<jsp:param name="type" value="${param.type}" />
 						<jsp:param name="field" value="${param.field}" />
 						<jsp:param name="pos" value="${pos}" />
-						<jsp:param name="format" value="thumbnail" />
+						<jsp:param name="format" value="auto" />
 					</jsp:include>
 				</c:otherwise>
 			</c:choose>
 		</div>
 		<div id="copy-${param.id}" class="col col-${right}">
-			<h2><strapi:contentImageBlockRightsHeader /></h2>
+			<h4><strapi:contentImageBlockRightsHeader /></h4>
 			<util:markdown2html><strapi:contentImageBlockRightsContent /></util:markdown2html>
-			
+
 			<c:if test="${not empty tag_contentImageBlockRights.url}">
-				<a href="<strapi:contentImageBlockRightsUrl/>"><strapi:contentImageBlockRightsUrlLabel/></a>
+					<c:choose>
+						<c:when test="${param.link_format == 'button' }">
+						<div class="center">
+							<a class="btn-n3c" href="<strapi:contentImageBlockRightsUrl/>"><strapi:contentImageBlockRightsUrlLabel /></a>
+						</div>
+					</c:when>
+						<c:otherwise>
+							<a href="<strapi:contentImageBlockRightsUrl/>"><strapi:contentImageBlockRightsUrlLabel /></a>
+						</c:otherwise>
+					</c:choose>
 			</c:if>
 		</div>
 	</div>

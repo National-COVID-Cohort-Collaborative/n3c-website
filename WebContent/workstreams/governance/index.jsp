@@ -12,6 +12,11 @@
 					<h2><strapi:workstreamInstancesMissionHeader/></h2>
 					<util:markdown2html><strapi:workstreamInstancesMissionBlock/></util:markdown2html>
 					
+					<div class="center">
+						<a href=https://uw-phi.zoom.us/webinar/register/WN_TKZ2MMcRS-ei3YtL1jbeJA" class="btn-n3c">Register for Friday Meetings</a>
+						<p>Fridays 7am PT/10am ET</p>
+					</div>
+					
 					<%@ include file="../common/connect.jsp" %>
 					
 					<%@ include file="../common/nav.jsp" %>

@@ -32,6 +32,7 @@
 						</strapi:publicationReviewsFaqs1Links>
 					</strapi:foreachPublicationReviewsFaqs1Links>
 				</div>
+				<p></p>
 				<util:markdown2html><strapi:publicationReviewsFaqBlock2/></util:markdown2html>
 				<div class="accordion" id="faq2Accordian">
 					<strapi:foreachPublicationReviewsFaqs2Links var="faqs" sortCriteria="faq_order">
@@ -45,8 +46,10 @@
 					</strapi:foreachPublicationReviewsFaqs2Links>
 				</div>
 
+				<p></p>
 				<util:markdown2html><strapi:publicationReviewsBlock2/></util:markdown2html>
 
+				<p></p>
 				<util:markdown2html><strapi:publicationReviewsBlock3/></util:markdown2html>
 			</strapi:publicationReviews>
 		</div>

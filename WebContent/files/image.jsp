@@ -27,6 +27,9 @@
 		<c:when test="${param.format == 'thumbnail' }">
 			<img class="${param.clss}" src="<util:propertyValue propertyFile="strapi" name="strapi-path"/>${row.thumbnail}"/>
 		</c:when>
+		<c:when test="${param.format == 'auto' }">
+			<img class="auto-image" src="<util:propertyValue propertyFile="strapi" name="strapi-path"/>${row.url}"/>
+		</c:when>
 		<c:otherwise>
 			<img class="${param.clss}" src="<util:propertyValue propertyFile="strapi" name="strapi-path"/>${row.large}" style="width: ${param.format}"/>
 		</c:otherwise>

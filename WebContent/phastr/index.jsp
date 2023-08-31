@@ -5,42 +5,38 @@
 	<div class="container-fluid">
 		<jsp:include page="../header.jsp" />
 		<div class="row flex-nowrap main-block">
-			<div class="col col-12 col-lg-2 side-col">
+			<div class="col-2 left-nav-bar">
 				<div class="scrollingHeading">
-					<div id="navigation">
-						<div class="navOne">
-							<div id="navOne">
-								<span> <a class="nav-link" href="#projects"> <i aria-hidden="true" class="fa fa-search"></i> Open Questions</a></span>
-								<hr class="scrollingHR" />
-							</div>
-							<div id="navTwo">
-								<span> <a class="nav-link" href="#about"> <i aria-hidden="true" class="fa fa-info-circle"></i> About</a></span>
-								<hr class="scrollingHR" />
-							</div>
-							<div id="navThree">
-								<span> <a class="nav-link" href="#eligibility"> <i aria-hidden="true" class="fa fa-check-circle"></i> Eligibility</a></span>
-								<hr class="scrollingHR" />
-							</div>
-							<div id="navFour">
-								<span> <a class="nav-link" href="#submission"> <i aria-hidden="true" class="fa fa-sign-in"></i> Application</a></span>
-								<hr class="scrollingHR" />
-							</div>
-							<div id="navFive">
-								<span> <a class="nav-link" href="#quickstart"> <i aria-hidden="true" class="fa fa-rocket"></i> Quick Start</a></span>
-								<hr class="scrollingHR" />
-							</div>
-							<div id="navFive">
-								<span> <a class="nav-link" href="#faqs"> <i aria-hidden="true" class="fa fa-question-circle"></i> FAQ's</a></span>
-							</div>
-							<div id="email" style="text-align: center; margin-top: 20px;">
-								<span> <a class="nav-link" href="mailto:PublicHealth@nih.gov" style="font-size: 12px" target="_blank"> <i aria-hidden="true" class="fa fa-envelope"
-										style="font-size: 12px; color: unset;"></i> PublicHealth@nih.gov</a></span>
-							</div>
-						</div>
+					<div id="scrollingItem">
+						<span> <a class="nav-link" href="#projects"> <i aria-hidden="true" class="fa fa-search"></i> Open Questions</a></span>
+						<hr class="scrollingHR" />
+					</div>
+					<div id="scrollingItem">
+						<span> <a class="nav-link" href="#about"> <i aria-hidden="true" class="fa fa-info-circle"></i> About</a></span>
+						<hr class="scrollingHR" />
+					</div>
+					<div id="scrollingItem">
+						<span> <a class="nav-link" href="#eligibility"> <i aria-hidden="true" class="fa fa-check-circle"></i> Eligibility</a></span>
+						<hr class="scrollingHR" />
+					</div>
+					<div id="scrollingItem">
+						<span> <a class="nav-link" href="#submission"> <i aria-hidden="true" class="fa fa-sign-in"></i> Application</a></span>
+						<hr class="scrollingHR" />
+					</div>
+					<div id="scrollingItem">
+						<span> <a class="nav-link" href="#quickstart"> <i aria-hidden="true" class="fa fa-rocket"></i> Quick Start</a></span>
+						<hr class="scrollingHR" />
+					</div>
+					<div id="scrollingItem">
+						<span> <a class="nav-link" href="#faqs"> <i aria-hidden="true" class="fa fa-question-circle"></i> FAQ's</a></span>
+					</div>
+					<div id="email" style="text-align: center; margin-top: 20px;">
+						<span> <a class="nav-link" href="mailto:PublicHealth@nih.gov" style="font-size: 12px" target="_blank"> <i aria-hidden="true" class="fa fa-envelope"
+								style="font-size: 12px; color: unset;"></i> PublicHealth@nih.gov</a></span>
 					</div>
 				</div>
 			</div>
-			<div class="col-10">
+			<div class="col-10 right-block">
 				<h1>N3C Public Health Answers to Speed Tractable Results (PHASTR)</h1>
 				<strapi:phastrs ID="1">
 					<a id="projects"></a>

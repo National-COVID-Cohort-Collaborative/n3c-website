@@ -15,12 +15,12 @@
 							<c:choose>
 								<c:when test="${strapi:navColumnsHasNavItemsNavColumnLinks(tag_navColumnsNavBarLinks.navColumnId) }">
 									<li class="nav-item dropdown">
-										<a class="nav-link dropdown-toggle" href="<strapi:navColumnsUrl/>" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <strapi:navColumnsLabel/> </a>
+										<a class="nav-link dropdown-toggle" href="<util:applicationRoot/><strapi:navColumnsUrl/>" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <strapi:navColumnsLabel/> </a>
 										<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 											<strapi:foreachNavItemsNavColumnLinks var="item" sortCriteria="nav_item_order">
 												<strapi:navItemsNavColumnLinks>
 													<strapi:navItems ID="${tag_navItemsNavColumnLinks.navItemId}">
-														<a class="dropdown-item" href="<strapi:navItemsUrl/>"><strapi:navItemsLabel/></a>
+														<a class="dropdown-item" href="<util:applicationRoot/><strapi:navItemsUrl/>"><strapi:navItemsLabel/></a>
 													</strapi:navItems>
 												</strapi:navItemsNavColumnLinks>
 											</strapi:foreachNavItemsNavColumnLinks>

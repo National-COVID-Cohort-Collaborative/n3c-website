@@ -8,24 +8,25 @@
 			<strapi:publicHealthQuestions ID="${param.id}">
 				<div class="main-block">
 					<h1><strapi:publicHealthQuestionsTitle /></h1>
-					<h2>Contract Description</h2>
+					<h3>Contract Description</h3>
 					<util:markdown2html><strapi:publicHealthQuestionsDescription /></util:markdown2html>
-					<h2>Contract Aims</h2>
+					<h3>Contract Aims</h3>
 					<util:markdown2html><strapi:publicHealthQuestionsAims /></util:markdown2html>
-					<h2>Analysis Plan / Research Method</h2>
+					<h3>Analysis Plan / Research Method</h3>
 					<util:markdown2html><strapi:publicHealthQuestionsAnalysisPlan /></util:markdown2html>
-					<h2>Expected Results</h2>
+					<h3>Expected Results</h3>
 					<util:markdown2html><strapi:publicHealthQuestionsExpectedResults /></util:markdown2html>
-					<h2>Inclusion Criteria</h2>
+					<h3>Inclusion Criteria</h3>
 					<util:markdown2html><strapi:publicHealthQuestionsInclusionCriteria /></util:markdown2html>
-					<h2>Exclusion Criteria</h2>
+					<h3>Exclusion Criteria</h3>
 					<util:markdown2html><strapi:publicHealthQuestionsExclusionCriteria /></util:markdown2html>
-					<h2>Phenotype</h2>
+					<h3>Phenotype</h3>
 					<util:markdown2html><strapi:publicHealthQuestionsPhenotype /></util:markdown2html>
-					<h2>Deliverables</h2>
+					<h3>Deliverables</h3>
 					<util:markdown2html><strapi:publicHealthQuestionsDeliverables /></util:markdown2html>
 				</div>
-				<div class="col col-12 col-lg-2 side-col">
+				<div class="col col-12 col-lg-3 side-col">
+					<div class="shade-blue">
 					<b>Application Open Date</b><br>
 					<strapi:publicHealthQuestionsOpenDate/><br>
 					<b>Application Close Date</b><br>
@@ -40,6 +41,7 @@
 					<strapi:publicHealthQuestionsContact/><br>
 					<b>Email</b><br>
 					<a href="mailto:<strapi:publicHealthQuestionsContactEmail/>"><strapi:publicHealthQuestionsContactEmail/></a><br>
+					</div>
 				</div>
 			</strapi:publicHealthQuestions>
 		</div>

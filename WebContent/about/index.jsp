@@ -8,7 +8,7 @@
 		<div class="main-block">
 			<strapi:abouts ID="1">
 				<div class="row flex-nowrap highlight">
-					<div class="col-12">
+					<div class="col-12 block">
 						<util:markdown2html><strapi:aboutsBlock1 /></util:markdown2html>
 					</div>
 				</div>
@@ -16,7 +16,7 @@
 					<div class="col-5">
 						<jsp:include page="../files/image.jsp">
 							<jsp:param value="325" name="id" />
-							<jsp:param value="small" name="format" />
+							<jsp:param value="auto" name="format" />
 						</jsp:include>
 					</div>
 					<div class="col-7">
@@ -36,11 +36,27 @@
 					</div>
 				</div>
 				<div class="row flex-nowrap highlight">
-					<div class="col-12">
+					<div class="col-12 block">
 						<util:markdown2html><strapi:aboutsBlock4 /></util:markdown2html>
 					</div>
 				</div>
 			</strapi:abouts>
+			<div class="col-12">
+			<p></p>
+				<h2 class="center">Workstreams</h2>
+				<div class="row flex-nowrap">
+					<strapi:workstreams ID="1">
+							<strapi:foreachWorkstreamsNavTilesLinks var="x">
+								<strapi:workstreamsNavTilesLinks>
+									<jsp:include page="../blocks/nav_tile_no_text.jsp">
+										<jsp:param value="${tag_workstreamsNavTilesLinks.navTileId}" name="id" />
+									</jsp:include>
+								</strapi:workstreamsNavTilesLinks>
+							</strapi:foreachWorkstreamsNavTilesLinks>
+					</strapi:workstreams>
+				</div>
+			</div>
+			<p></p>
 			<h2 class="center">N3C Events</h2>
 			<jsp:include page="../google-calendar/calendar.jsp"/>
 			<p class="center"><a href="<util:applicationRoot/>/calendar">View N3C Calendar</a></p>

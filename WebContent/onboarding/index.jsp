@@ -19,7 +19,7 @@
 						<strapi:onboardingsSubheader />
 					</h2>
 					
-					<h2><strapi:onboardingsRegistrationHeader/></h2>
+					<h3><strapi:onboardingsRegistrationHeader/></h3>
 					<strapi:foreachOnboardingsStepLinks var="x" sortCriteria="content_image_block_right_order">
 						<strapi:onboardingsStepLinks>
 							<jsp:include page="../blocks/text_right.jsp">
@@ -27,6 +27,7 @@
 								<jsp:param name="type" value="api::content-image-block-right.content-image-block-right"/>
 								<jsp:param name="field" value="image"/>
 								<jsp:param name="image_pos" value="1"/>
+								<jsp:param name="width" value="11"/>
 							</jsp:include>
 						</strapi:onboardingsStepLinks>
 					</strapi:foreachOnboardingsStepLinks>
@@ -38,14 +39,15 @@
 								<jsp:include page="../blocks/nav_tile.jsp">
 									<jsp:param value="${tag_onboardingsNavTilesLinks.navTileId}" name="id" />
 									<jsp:param value="top" name="image_pos" />
+									<jsp:param value="button" name="link_format" />
 								</jsp:include>
 							</div>
 							</strapi:onboardingsNavTilesLinks>
 						</strapi:foreachOnboardingsNavTilesLinks>
 					</div>
 				
-					<div class="row">
-						<strapi:onboardingsBlock/>
+					<div class="col-9 center block shadow">
+						<util:markdown2html><strapi:onboardingsBlock/></util:markdown2html>
 					</div>
 				
 					<util:markdown2html><strapi:onboardingsBlock2/></util:markdown2html>

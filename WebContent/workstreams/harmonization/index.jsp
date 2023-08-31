@@ -9,8 +9,18 @@
 				<strapi:workstreamInstances ID="3">
 					<h1><strapi:workstreamInstancesHeader/></h1>
 					
-					<h2><strapi:workstreamInstancesMissionHeader/></h2>
-					<util:markdown2html><strapi:workstreamInstancesMissionBlock/></util:markdown2html>
+					<div class="row flex-nowrap">
+						<div class="col-8">
+							<h2><strapi:workstreamInstancesMissionHeader/></h2>
+							<util:markdown2html><strapi:workstreamInstancesMissionBlock/></util:markdown2html>
+						</div>
+						<div class="col-4 block">
+							<jsp:include page="../../youtube/video.jsp">
+								<jsp:param value="4" name="id" />
+								<jsp:param value="false" name="footer" />
+							</jsp:include>
+						</div>
+					</div>
 					
 					<%@ include file="../common/connect.jsp" %>
 					

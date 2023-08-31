@@ -35,6 +35,8 @@
 							<util:markdown2html><strapi:externalDatasetsBlock1/></util:markdown2html>
 						</div>
 						<div class="col-6">
+							<p>&nbsp;</p>
+							<p>&nbsp;</p>
 							<strapi:foreachExternalDatasetsYouTubeVideoLinks var="x">
 								<strapi:externalDatasetsYouTubeVideoLinks>
 									<jsp:include page="../youtube/video.jsp">

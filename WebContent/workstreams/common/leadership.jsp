@@ -1,4 +1,4 @@
-
+<p></p>
 <h2><strapi:workstreamInstancesLeadershipHeader /></h2>
 <div class="row flex-nowrap">
 	<strapi:foreachWorkstreamInstancesBiosLinks var="bio" sortCriteria="bio_order">

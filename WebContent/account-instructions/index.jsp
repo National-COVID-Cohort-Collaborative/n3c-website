@@ -32,6 +32,7 @@
 								<jsp:param name="type" value="api::content-image-block-right.content-image-block-right"/>
 								<jsp:param name="field" value="image"/>
 								<jsp:param name="image_pos" value="1"/>
+								<jsp:param name="width" value="11"/>
 							</jsp:include>
 						</strapi:accountCreationsInstructionsLinks>
 					</strapi:foreachAccountCreationsInstructionsLinks>
