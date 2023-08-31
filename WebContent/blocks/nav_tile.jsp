@@ -38,7 +38,7 @@
 		<div class="center">
 			<c:choose>
 				<c:when test="${param.link_format == 'button' }">
-					<a class="btn-n3c" href="<strapi:navTilesUrl/>"><strapi:navTilesUrlLabel /></a>
+					<a class="btn btn-primary btn-n3c active" href="<strapi:navTilesUrl/>"><strapi:navTilesUrlLabel /></a>
 				</c:when>
 				<c:otherwise>
 					<a href="<strapi:navTilesUrl/>"><strapi:navTilesUrlLabel /></a>

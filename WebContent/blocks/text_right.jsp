@@ -54,7 +54,7 @@
 					<c:choose>
 						<c:when test="${param.link_format == 'button' }">
 						<div class="center">
-							<a class="btn-n3c" href="<strapi:contentImageBlockRightsUrl/>"><strapi:contentImageBlockRightsUrlLabel /></a>
+							<a class="btn btn-primary btn-n3c active" href="<strapi:contentImageBlockRightsUrl/>"><strapi:contentImageBlockRightsUrlLabel /></a>
 						</div>
 					</c:when>
 						<c:otherwise>
