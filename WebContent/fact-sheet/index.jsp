@@ -37,41 +37,41 @@
 							style="display: flex; flex-direction: row; flex-wrap: wrap; padding: 10px; font-size: 20px; webkit-box-shadow: 1px 2px 30px 2px rgba(92, 123, 128, 0.72); -moz-box-shadow: 1px 2px 30px 2px rgba(92, 123, 128, 0.72); box-shadow: 1px 2px 30px 2px rgba(92, 123, 128, 0.72); border-radius: 5px; margin-left: 10px; margin-right: 10px; padding-bottom: 30px; padding-top: 30px;">
 							<div class="col-12 col-md-6">
 								<p>
-									<strong><i aria-hidden="true" class="fa fa-hospital-o"> </i>Sites:</strong> <span id="sites">&nbsp;</span>
+									<strong><i aria-hidden="true" class="fa-regular fa-hospital"> </i> Sites:</strong> <span id="sites">&nbsp;</span>
 								</p>
 
 								<p>
-									<strong><i aria-hidden="true" class="fa fa-user"> </i>Persons:</strong> <span id="persons">&nbsp;</span>
+									<strong><i aria-hidden="true" class="fa fa-user"> </i> Persons:</strong> <span id="persons">&nbsp;</span>
 								</p>
 
 								<p>
-									<strong><i aria-hidden="true" class="fa fa-plus"> </i>COVID+ Cases:</strong> <span id="positive">&nbsp;</span>
+									<strong><i aria-hidden="true" class="fa fa-plus"> </i> COVID+ Cases:</strong> <span id="positive">&nbsp;</span>
 								</p>
 
 								<p>
-									<strong><i aria-hidden="true" class="fa fa-table"> </i>Total Number of Rows:</strong> <span id="rows">&nbsp;</span>
+									<strong><i aria-hidden="true" class="fa fa-table"> </i> Total Number of Rows:</strong> <span id="rows">&nbsp;</span>
 								</p>
 
 								<p>
-									<strong><i aria-hidden="true" class="fa fa-user-md"> </i>Clinical Observations:</strong> <span id="observations">&nbsp;</span>
+									<strong><i aria-hidden="true" class="fa fa-user-md"> </i> Clinical Observations:</strong> <span id="observations">&nbsp;</span>
 								</p>
 							</div>
 
 							<div class="col-12 col-md-6">
 								<p>
-									<strong><i aria-hidden="true" class="fa fa-heartbeat"> </i>Lab Results:</strong> <span id="results">&nbsp;</span>
+									<strong><i aria-hidden="true" class="fa fa-heartbeat"> </i> Lab Results:</strong> <span id="results">&nbsp;</span>
 								</p>
 
 								<p>
-									<strong><i aria-hidden="true" class="fa fa-id-card"> </i>Medication Records:</strong> <span id="records">&nbsp;</span>
+									<strong><i aria-hidden="true" class="fa fa-id-card"> </i> Medication Records:</strong> <span id="records">&nbsp;</span>
 								</p>
 
 								<p>
-									<strong><i aria-hidden="true" class="fa fa-list"> </i>Procedures:</strong> <span id="procedures">&nbsp;</span>
+									<strong><i aria-hidden="true" class="fa fa-list"> </i> Procedures:</strong> <span id="procedures">&nbsp;</span>
 								</p>
 
 								<p>
-									<strong><i aria-hidden="true" class="fa fa-calendar-plus-o"> </i>Visits:</strong> <span id="visits">&nbsp;</span>
+									<strong><i aria-hidden="true" class="fa-regular fa-calendar-plus"> </i> Visits:</strong> <span id="visits">&nbsp;</span>
 								</p>
 							</div>
 						</div>

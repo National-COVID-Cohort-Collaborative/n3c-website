@@ -24,7 +24,7 @@ $.getJSON("https://labs.cd2h.org/n3c_dashboard/embedded_dua_roster.jsp", functio
 	var json = $.parseJSON(JSON.stringify(data));
 
 	var col = [];
-	var col_icons= ['<i class="fa fa-university" aria-hidden="true" style="color: #376076;"></i> ','<i class="fa fa-user" aria-hidden="true" style="color: #376076;"></i> ', '<i class="fa fa-calendar-o" aria-hidden="true" style="color: #376076;"></i> '];
+	var col_icons= ['<i class="fa fa-university" aria-hidden="true" style="color: #376076;"></i> ','<i class="fa fa-user" aria-hidden="true" style="color: #376076;"></i> ', '<i class="fa fa-calendar" aria-hidden="true" style="color: #376076;"></i> '];
 
 	for (i in json['headers']){
 		col.push(json['headers'][i]['label']);
