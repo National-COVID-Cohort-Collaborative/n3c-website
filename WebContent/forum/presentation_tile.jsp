@@ -1,7 +1,7 @@
 <%@ include file="../_include.jsp"%>
 
 <strapi:forumPresentations ID="${param.id}">
-	<div class="card" style="width: 18rem;">
+	<div class="card">
 		<div class="card-body">
 			<h3 class="card-title">
 				<fmt:parseDate  var="date" pattern="yyyy-MM-dd"><strapi:forumPresentationsDate /></fmt:parseDate>
