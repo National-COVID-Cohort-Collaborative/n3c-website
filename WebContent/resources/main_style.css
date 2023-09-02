@@ -62,8 +62,13 @@ td {
 
 .left-nav-bar {
 	max-width: 15%;
-    background-color:Gainsboro;
-    position: fixed
+    background-color:#FFD8A3;
+	height: 100%;
+	float: left;
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	top:10px;
+	bottom:50px;
 }
 
 .scrollingHeading {
@@ -93,7 +98,7 @@ td {
 .right-block {
 	margin-top:20px;
 	margin-bottom:20px;
-	margin-left: 20%;
+	margin-left: 10px;
 }
 
 .subblock {
@@ -185,3 +190,4 @@ td {
 {
     height: inherit !important;
 }
+                                                                    	
