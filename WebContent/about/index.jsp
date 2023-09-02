@@ -12,7 +12,7 @@
 						<util:markdown2html><strapi:aboutsBlock1 /></util:markdown2html>
 					</div>
 				</div>
-				<div class="row flex-nowrap block">
+				<div class="row flex-nowrap shadow-	block">
 					<div class="col-5">
 						<jsp:include page="../files/image.jsp">
 							<jsp:param value="325" name="id" />
@@ -41,10 +41,11 @@
 					</div>
 				</div>
 			</strapi:abouts>
-			<div class="col-12">
-			<p></p>
-				<h2 class="center">Workstreams</h2>
-				<div class="row flex-nowrap">
+			<div class="shadow-block">
+				<div class="col-12">
+					<h2 class="center">Workstreams</h2>
+				</div>
+				<div class="col-12 row flex-nowrap center">
 					<strapi:workstreams ID="1">
 							<strapi:foreachWorkstreamsNavTilesLinks var="x">
 								<strapi:workstreamsNavTilesLinks>

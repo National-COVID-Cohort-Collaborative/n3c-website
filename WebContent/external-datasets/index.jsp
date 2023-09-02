@@ -30,7 +30,7 @@
 							</div>
 						</div>
 
-					<div class="row flex-nowrap" id="browse">
+					<div class="row flex-nowrap shadow-block" id="browse">
 						<div class="col-6">
 							<util:markdown2html><strapi:externalDatasetsBlock1/></util:markdown2html>
 						</div>

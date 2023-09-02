@@ -1,6 +1,6 @@
 <%@ include file="../_include.jsp"%>
 
-<div class="row main-block shadow">
+<div class="row main-block shadow-block">
 	<div class="col-8">
 		<strapi:landingPages ID="1">
 			<util:markdown2html><strapi:landingPagesResearchers/></util:markdown2html>

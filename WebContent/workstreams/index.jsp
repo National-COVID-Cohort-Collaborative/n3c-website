@@ -33,19 +33,19 @@
 					</strapi:foreachWorkstreamsYouTubeVideoLinks>
 					<util:markdown2html><strapi:workstreamsBlock3/></util:markdown2html>
 
-						<div class="row flex-nowrap block">
+						<div class="shadow-block">
 							<div class="col-12">
 								<h2 class="center">Workstreams</h2>
 							</div>
-						</div>
-						<div class="row flex-nowrap">
-							<strapi:foreachWorkstreamsNavTilesLinks var="x">
-								<strapi:workstreamsNavTilesLinks>
-									<jsp:include page="../blocks/nav_tile_no_text.jsp">
-										<jsp:param value="${tag_workstreamsNavTilesLinks.navTileId}" name="id" />
-									</jsp:include>
-								</strapi:workstreamsNavTilesLinks>
-							</strapi:foreachWorkstreamsNavTilesLinks>
+							<div class="col-12 row flex-nowrap center">
+								<strapi:foreachWorkstreamsNavTilesLinks var="x">
+									<strapi:workstreamsNavTilesLinks>
+										<jsp:include page="../blocks/nav_tile_no_text.jsp">
+											<jsp:param value="${tag_workstreamsNavTilesLinks.navTileId}" name="id" />
+										</jsp:include>
+									</strapi:workstreamsNavTilesLinks>
+								</strapi:foreachWorkstreamsNavTilesLinks>
+							</div>
 						</div>
 
 				</strapi:workstreams>

@@ -33,8 +33,8 @@
 							</div>
 						</div>
 
-						<div class="row"
-							style="display: flex; flex-direction: row; flex-wrap: wrap; padding: 10px; font-size: 20px; webkit-box-shadow: 1px 2px 30px 2px rgba(92, 123, 128, 0.72); -moz-box-shadow: 1px 2px 30px 2px rgba(92, 123, 128, 0.72); box-shadow: 1px 2px 30px 2px rgba(92, 123, 128, 0.72); border-radius: 5px; margin-left: 10px; margin-right: 10px; padding-bottom: 30px; padding-top: 30px;">
+						<div class="row shadow-block"
+							style="display: flex; flex-direction: row; flex-wrap: wrap; font-size: 20px; ">
 							<div class="col-12 col-md-6">
 								<p>
 									<strong><i aria-hidden="true" class="fa-regular fa-hospital"> </i> Sites:</strong> <span id="sites">&nbsp;</span>

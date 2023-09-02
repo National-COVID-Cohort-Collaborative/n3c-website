@@ -1,6 +1,6 @@
 <%@ include file="../_include.jsp"%>
 
-<div class="row main-block shadow">
+<div class="row main-block">
 	<div class="col-3">
 		<jsp:include page="../files/image.jsp">
 			<jsp:param name="id" value="697" />

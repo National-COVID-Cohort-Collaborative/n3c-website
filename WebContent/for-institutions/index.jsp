@@ -18,16 +18,18 @@
 						</strapi:foreachInstitutionalEssentialsNavTilesLinks>
 					</div>
 
-					<strapi:foreachInstitutionalEssentialsJoinBlockLinks var="y">
-						<strapi:institutionalEssentialsJoinBlockLinks>
-							<jsp:include page="../blocks/text_left.jsp">
-								<jsp:param name="id" value="${tag_institutionalEssentialsJoinBlockLinks.contentImageBlockLeftId}"/>
-								<jsp:param name="type" value="api::content-image-block-left.content-image-block-left"/>
-								<jsp:param name="field" value="image"/>
-								<jsp:param name="image_pos" value="1"/>
-							</jsp:include>
-						</strapi:institutionalEssentialsJoinBlockLinks>
-					</strapi:foreachInstitutionalEssentialsJoinBlockLinks>
+					<div class="shadow-block">
+						<strapi:foreachInstitutionalEssentialsJoinBlockLinks var="y">
+							<strapi:institutionalEssentialsJoinBlockLinks>
+								<jsp:include page="../blocks/text_left.jsp">
+									<jsp:param name="id" value="${tag_institutionalEssentialsJoinBlockLinks.contentImageBlockLeftId}"/>
+									<jsp:param name="type" value="api::content-image-block-left.content-image-block-left"/>
+									<jsp:param name="field" value="image"/>
+									<jsp:param name="image_pos" value="1"/>
+								</jsp:include>
+							</strapi:institutionalEssentialsJoinBlockLinks>
+						</strapi:foreachInstitutionalEssentialsJoinBlockLinks>
+					</div>
 
 					<h2><strapi:institutionalEssentialsHeader2/></h2>
 					<strapi:foreachInstitutionalEssentialsStepLinks var="z" sortCriteria="content_image_block_right_order">

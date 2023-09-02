@@ -19,20 +19,22 @@
 						<strapi:onboardingsSubheader />
 					</h2>
 					
-					<h3><strapi:onboardingsRegistrationHeader/></h3>
-					<strapi:foreachOnboardingsStepLinks var="x" sortCriteria="content_image_block_right_order">
-						<strapi:onboardingsStepLinks>
-							<jsp:include page="../blocks/text_right.jsp">
-								<jsp:param name="id" value="${tag_onboardingsStepLinks.contentImageBlockRightId}"/>
-								<jsp:param name="type" value="api::content-image-block-right.content-image-block-right"/>
-								<jsp:param name="field" value="image"/>
-								<jsp:param name="image_pos" value="1"/>
-								<jsp:param name="width" value="11"/>
-							</jsp:include>
-						</strapi:onboardingsStepLinks>
-					</strapi:foreachOnboardingsStepLinks>
+					<div class="shadow-block">
+						<h3><strapi:onboardingsRegistrationHeader/></h3>
+						<strapi:foreachOnboardingsStepLinks var="x" sortCriteria="content_image_block_right_order">
+							<strapi:onboardingsStepLinks>
+								<jsp:include page="../blocks/text_right.jsp">
+									<jsp:param name="id" value="${tag_onboardingsStepLinks.contentImageBlockRightId}"/>
+									<jsp:param name="type" value="api::content-image-block-right.content-image-block-right"/>
+									<jsp:param name="field" value="image"/>
+									<jsp:param name="image_pos" value="1"/>
+									<jsp:param name="width" value="11"/>
+								</jsp:include>
+							</strapi:onboardingsStepLinks>
+						</strapi:foreachOnboardingsStepLinks>
+					</div>
 					
-					<div class="row flex-wrap">
+					<div class="row flex-wrap block">
 						<strapi:foreachOnboardingsNavTilesLinks var="x" sortCriteria="nav_tile_order">
 							<strapi:onboardingsNavTilesLinks>
 							<div class="col-3">
@@ -46,7 +48,7 @@
 						</strapi:foreachOnboardingsNavTilesLinks>
 					</div>
 				
-					<div class="col-9 center block shadow">
+					<div class="col-9 center shadow-block">
 						<util:markdown2html><strapi:onboardingsBlock/></util:markdown2html>
 					</div>
 				

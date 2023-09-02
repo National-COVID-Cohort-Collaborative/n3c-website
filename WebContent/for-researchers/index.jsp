@@ -18,16 +18,18 @@
 						</strapi:foreachResearcherEssentialsNavTilesLinks>
 					</div>
 
-					<strapi:foreachResearcherEssentialsJoinBlockLinks var="y">
-						<strapi:researcherEssentialsJoinBlockLinks>
-							<jsp:include page="../blocks/text_left.jsp">
-								<jsp:param name="id" value="${tag_researcherEssentialsJoinBlockLinks.contentImageBlockLeftId}"/>
-								<jsp:param name="type" value="api::content-image-block-left.content-image-block-left"/>
-								<jsp:param name="field" value="image"/>
-								<jsp:param name="image_pos" value="1"/>
-							</jsp:include>
-						</strapi:researcherEssentialsJoinBlockLinks>
-					</strapi:foreachResearcherEssentialsJoinBlockLinks>
+					<div class="shadow-block">
+						<strapi:foreachResearcherEssentialsJoinBlockLinks var="y">
+							<strapi:researcherEssentialsJoinBlockLinks>
+								<jsp:include page="../blocks/text_left.jsp">
+									<jsp:param name="id" value="${tag_researcherEssentialsJoinBlockLinks.contentImageBlockLeftId}"/>
+									<jsp:param name="type" value="api::content-image-block-left.content-image-block-left"/>
+									<jsp:param name="field" value="image"/>
+									<jsp:param name="image_pos" value="1"/>
+								</jsp:include>
+							</strapi:researcherEssentialsJoinBlockLinks>
+						</strapi:foreachResearcherEssentialsJoinBlockLinks>
+					</div>
 
 					<strapi:foreachResearcherEssentialsAccessBlockLinks var="y">
 						<strapi:researcherEssentialsAccessBlockLinks>

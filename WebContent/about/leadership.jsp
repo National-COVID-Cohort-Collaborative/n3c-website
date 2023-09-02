@@ -10,7 +10,7 @@
 					<strapi:foreachLeadershipsBioGroupsLinks var="idIter" sortCriteria="bio_group_order">
 						<strapi:leadershipsBioGroupsLinks>
 							<strapi:bioGroups ID="${tag_leadershipsBioGroupsLinks.bioGroupId}">
-								<div class="block">
+								<div class="shadow-block">
 									<h1><strapi:bioGroupsName /></h1>
 									<div class="row flex-wrap">
 										<strapi:foreachBiosBioGroupsLinks var="bio" sortCriteria="bio_order">

@@ -5,8 +5,7 @@
 	<div class="container-fluid">
 		<jsp:include page="../header.jsp" />
 		<strapi:enclaveEssentials ID="1">
-			<div class="row flex-nowrap main-block">
-				<div class="col-12">
+			<div class="main-block">
 					<h1><strapi:enclaveEssentialsHeader /></h1>
 					<strapi:foreachEnclaveEssentialsDescriptionLinks var="x">
 						<strapi:enclaveEssentialsDescriptionLinks>
@@ -22,9 +21,10 @@
 						<util:markdown2html><strapi:enclaveEssentialsBlock1 /></util:markdown2html>
 					</div>
 
+				<div class="row flex-nowrap shadow-block">
 					<strapi:foreachEnclaveEssentialsUserTilesLinks var="x" sortCriteria="content_image_block_left_order">
 						<strapi:enclaveEssentialsUserTilesLinks>
-							<div class="block">
+							<div class="col-6 block">
 								<jsp:include page="../blocks/text_left.jsp">
 									<jsp:param name="id" value="${tag_enclaveEssentialsUserTilesLinks.contentImageBlockLeftId}" />
 									<jsp:param name="type" value="api::content-image-block-left.content-image-block-left" />

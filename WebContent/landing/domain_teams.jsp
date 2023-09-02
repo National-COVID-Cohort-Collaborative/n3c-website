@@ -7,7 +7,7 @@
 </style>
 
 	<jsp:include page="../files/image.jsp">
-		<jsp:param name="id" value="710" />
+		<jsp:param name="id" value="709" />
 		<jsp:param name="format" value="100%" />
 	</jsp:include>
 	<div class="main-block center">

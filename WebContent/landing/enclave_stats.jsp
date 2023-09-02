@@ -1,6 +1,6 @@
 <%@ include file="../_include.jsp"%>
 
-<div class="row flex-nowrap">
+<div class="row flex-nowrap main-block">
 	<div class="col-4">
 		<jsp:include page="../files/image.jsp">
 			<jsp:param name="id" value="371" />
