@@ -28,7 +28,7 @@
 									</li>
 								</c:when>
 								<c:otherwise>
-									<li class="nav-item active"><a class="nav-link" href="<strapi:navColumnsUrl/>"><strapi:navColumnsLabel/></a></li>			
+									<li class="nav-item active"><a class="nav-link" href="<util:applicationRoot/><strapi:navColumnsUrl/>"><strapi:navColumnsLabel/></a></li>			
 								</c:otherwise>
 							</c:choose>
 						</strapi:navColumns>

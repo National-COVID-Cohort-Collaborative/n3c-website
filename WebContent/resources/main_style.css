@@ -44,6 +44,10 @@ td {
 	padding: 10px;
 }
 
+a {
+	color:#1570ba;
+}
+
 .btn-n3c {
   border: none;
   background: rgba(100,42,107,1);
