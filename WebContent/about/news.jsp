@@ -9,7 +9,7 @@
 	<div class="main-block">
 	<strapi:newsItems ID="1">
 		<h2>N3C in the News</h2>
-		<strapi:foreachNewsItemsPressReleasesLinks var="items" sortCriteria="press_release_order desc">
+		<strapi:foreachNewsItemsPressReleasesLinks var="items" usePressReleases="true" sortCriteria="date desc">
 			<strapi:newsItemsPressReleasesLinks>
 				<strapi:pressReleases ID="${tag_newsItemsPressReleasesLinks.pressReleaseId}">
 					<div class="row flex-nowrap">
