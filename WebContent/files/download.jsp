@@ -14,5 +14,5 @@
 	<sql:param>${param.field}</sql:param>
 </sql:query>
 <c:forEach items="${media.rows}" var="row" varStatus="rowCounter">
-	<c:redirect url="<util:propertyValue propertyFile="strapi" name="strapi-path"/>${row.url}"/>	
+	<c:redirect url="<util:propertyValue propertyFile='strapi' name='strapi-path'/>${row.url}"/>	
 </c:forEach>

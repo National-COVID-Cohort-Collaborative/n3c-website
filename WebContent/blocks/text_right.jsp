@@ -4,12 +4,12 @@
 <c:set var="right" value="9"/>
 
 <c:if test="${not empty param.width}">
-	<fmt:parseNumber var="width" value="${param.width}" integerOnly="true"/>
+	<fmt:parseNumber var="width" value="${param.width}" integerOnly="true" parseLocale="en_US" />
 	<c:set var="left" value="${12 - width}"/>
 	<c:set var="right" value="${width}"/>
 </c:if>
 
-<fmt:parseNumber var="pos" value="${param.image_pos}" integerOnly="true"/>
+<fmt:parseNumber var="pos" value="${param.image_pos}" integerOnly="true" parseLocale="en_US" />
 
 <strapi:contentImageBlockRights ID="${param.id}">
 	<div class="row flex-nowrap block">

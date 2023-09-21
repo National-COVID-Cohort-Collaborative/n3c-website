@@ -4,7 +4,7 @@
 	<div class="card">
 		<div class="card-body">
 			<h3 class="card-title">
-				<fmt:parseDate  var="date" pattern="yyyy-MM-dd"><strapi:forumPresentationsDate /></fmt:parseDate>
+				<fmt:parseDate  var="date" pattern="yyyy-MM-dd" parseLocale="en_US" ><strapi:forumPresentationsDate /></fmt:parseDate>
 				<fmt:formatDate value="${date}" dateStyle="long"/>
 			</h3>
 			<span class="card-text">
