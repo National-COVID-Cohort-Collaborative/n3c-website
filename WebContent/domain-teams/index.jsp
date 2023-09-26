@@ -45,7 +45,7 @@
 							<strapi:domainsDomainTeamsLinks>
 								<strapi:domainTeams ID="${tag_domainsDomainTeamsLinks.domainTeamId}">
 									<div class="card col-4 shade-blue">
-										<h3><a href="team.jsp?id=<strapi:domainTeamsID/>"><strapi:domainTeamsName /></a></h3>
+										<h3><a href="<util:applicationRoot/>/<strapi:domainTeamsAlias/>"><strapi:domainTeamsName /></a></h3>
 										<util:markdown2html><strapi:domainTeamsSummary /></util:markdown2html>
 									</div>
 								</strapi:domainTeams>
@@ -61,7 +61,7 @@
 							<strapi:domainsCrossCuttingTeamsLinks>
 								<strapi:domainTeams ID="${tag_domainsCrossCuttingTeamsLinks.domainTeamId}">
 									<div class="card col-4 shade-blue">
-										<h3><a href="team.jsp?id=<strapi:domainTeamsID/>"><strapi:domainTeamsName /></a></h3>
+										<h3><a href="<util:applicationRoot/>/<strapi:domainTeamsAlias/>"><strapi:domainTeamsName /></a></h3>
 										<util:markdown2html><strapi:domainTeamsSummary /></util:markdown2html>
 									</div>
 								</strapi:domainTeams>
