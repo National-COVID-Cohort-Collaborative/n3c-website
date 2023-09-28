@@ -16,7 +16,7 @@
 						<h2><strapi:forumsHeader2 /></h2>
 							<div class="row flex-wrap">
 						<div class="col-8">
-								<strapi:foreachForumsForumPresentationsLinks var="x">
+								<strapi:foreachForumsForumPresentationsLinks var="x" useForumPresentations="true" sortCriteria="date">
 									<strapi:forumsForumPresentationsLinks>
 										<jsp:include page="presentation_tile.jsp">
 											<jsp:param value="${tag_forumsForumPresentationsLinks.forumPresentationId}" name="id" />
