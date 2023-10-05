@@ -28,7 +28,7 @@
 				<jsp:param name="id" value="${param.id}" />
 				<jsp:param name="type" value="${param.type}" />
 				<jsp:param name="field" value="${param.field}" />
-				<jsp:param name="format" value="thumbnail" />
+				<jsp:param name="format" value="auto" />
 			</jsp:include>
 		</div>
 	</div>
