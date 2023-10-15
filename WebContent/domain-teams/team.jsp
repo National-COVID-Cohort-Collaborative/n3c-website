@@ -1,6 +1,11 @@
 <%@ include file="../_include.jsp"%>
 <html>
-<jsp:include page="../head.jsp" />
+<strapi:domainTeams ID="${param.id}">
+<jsp:include page="../head.jsp">
+	<jsp:param name="page" value="Domain Teams - ${tag_domainTeams.name }"/>
+</jsp:include>
+</strapi:domainTeams>
+
 <body>
 	<div class="container-fluid">
 		<jsp:include page="../header.jsp" />

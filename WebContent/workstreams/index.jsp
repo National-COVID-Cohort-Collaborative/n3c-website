@@ -1,6 +1,9 @@
 <%@ include file="../_include.jsp"%>
 <html>
-<jsp:include page="../head.jsp" />
+<jsp:include page="../head.jsp">
+	<jsp:param name="page" value="Workstreams"/>
+</jsp:include>
+
 <body>
 	<div class="container-fluid">
 		<jsp:include page="../header.jsp" />
@@ -12,7 +15,7 @@
 					<strapi:foreachWorkstreamsIntroLinks var="x">
 						<strapi:workstreamsIntroLinks>
 							<strapi:contentImageBlockRights ID="${tag_workstreamsIntroLinks.contentImageBlockRightId}">
-								<strapi:contentImageBlockRightsContent />
+								<util:markdown2html><strapi:contentImageBlockRightsContent /></util:markdown2html>
 							</strapi:contentImageBlockRights>
 						</strapi:workstreamsIntroLinks>
 					</strapi:foreachWorkstreamsIntroLinks>

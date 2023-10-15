@@ -1,6 +1,9 @@
 <%@ include file="../_include.jsp"%>
 <html>
-<jsp:include page="../head.jsp" />
+<jsp:include page="../head.jsp">
+	<jsp:param name="page" value="Webinars and Information Sessions"/>
+</jsp:include>
+
 <body>
 	<div class="container-fluid">
 		<jsp:include page="../header.jsp" />

@@ -1,6 +1,8 @@
 <%@ include file="../../_include.jsp"%>
 <html>
-<jsp:include page="../../head.jsp" />
+<jsp:include page="../../head.jsp">
+	<jsp:param name="page" value="Workstream - Data Partnership and Governance"/>
+</jsp:include>
 <body>
 	<div class="container-fluid">
 		<jsp:include page="../../header.jsp" />

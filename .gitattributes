@@ -262,6 +262,9 @@ WebContent/resources/tinymce/themes/silver/theme.min.js -text
 WebContent/resources/tinymce/tinymce.d.ts -text
 WebContent/resources/tinymce/tinymce.min.js -text
 WebContent/robots.txt -text
+WebContent/search/index.jsp -text
+WebContent/search/local.jsp -text
+WebContent/search/prod.jsp -text
 WebContent/standards/index.jsp -text
 WebContent/support/index.jsp -text
 WebContent/team-creation/index.jsp -text

@@ -11,6 +11,6 @@
 		<jsp:include page="../blocks/ehr_stats.jsp" />
 		<jsp:include page="../blocks/admin_stats.jsp" />
 		<p></p>
-		<a href="https://covid.cd2h.org/dashboard" class="btn btn-primary btn-n3c active" role="button" aria-pressed="true">Explore the Full N3C Dashboard</a>
+		<a href="<util:applicationRoot/>/dashboard" class="btn btn-primary btn-n3c active" role="button" aria-pressed="true">Explore the Full N3C Dashboard</a>
 	</div>
 </div>

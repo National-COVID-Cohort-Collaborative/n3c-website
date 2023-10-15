@@ -1,7 +1,9 @@
 <%@ include file="_include.jsp"%>
 <html>
 
-<jsp:include page="head.jsp" />
+<jsp:include page="head.jsp">
+	<jsp:param name="page" value="Home"/>
+</jsp:include>
 
 <body>
 	<div class="container-fluid">

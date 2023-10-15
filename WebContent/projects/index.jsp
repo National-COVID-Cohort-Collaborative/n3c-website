@@ -5,7 +5,10 @@
     	display:none;
 	}	
 </style>
-<jsp:include page="../head.jsp" />
+<jsp:include page="../head.jsp">
+	<jsp:param name="page" value="Projects"/>
+</jsp:include>
+
 <body>
 	<div class="container-fluid">
 		<jsp:include page="../header.jsp" />
