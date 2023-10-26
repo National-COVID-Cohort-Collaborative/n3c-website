@@ -5,13 +5,6 @@
 		<div class="row banner-slick slick-test">
 			<div class="card hover-card_noshadow mb-2">
 				<jsp:include page="../files/image.jsp">
-					<jsp:param value="370" name="id" />
-					<jsp:param value="medium" name="format" />
-					<jsp:param value="d-block w-100" name="clss" />
-				</jsp:include>
-			</div>
-			<div class="card hover-card_noshadow mb-2">
-				<jsp:include page="../files/image.jsp">
 					<jsp:param value="369" name="id" />
 					<jsp:param value="medium" name="format" />
 					<jsp:param value="d-block w-100" name="clss" />
