@@ -75,7 +75,7 @@
 		<div class="row footer-social">
 			<div class="center">
 				<ul id="social-icons">
-					<li><a href="mailto:cd2h@ohsu.edu"> <i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+					<li><a href="mailto:n3c@cuanschutz.edu"> <i class="fa fa-envelope" aria-hidden="true"></i></a></li>
 					<li><a href="https://twitter.com/data2health?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"> <i class="fab fa-twitter-square"></i></a></li>
 					<li><a href="https://join.slack.com/t/cd2h/signup"> <i class="fab fa-slack"></i></a></li>
 					<li><a href="https://github.com/data2health"><i class="fab fa-github-square"></i></a></li>
