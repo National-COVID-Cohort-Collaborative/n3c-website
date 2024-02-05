@@ -23,6 +23,7 @@ WebContent/about/news_logo.jsp -text
 WebContent/about/presentations.jsp -text
 WebContent/account-instructions/checklist.jsp -text
 WebContent/account-instructions/index.jsp -text
+WebContent/account-instructions/tenant-checklist.jsp -text
 WebContent/acknowledgements/index.jsp -text
 WebContent/bio/headshot.jsp -text
 WebContent/bio/thumbnail.jsp -text
@@ -60,6 +61,8 @@ WebContent/files/related_image_pos.jsp -text
 WebContent/footer.jsp -text
 WebContent/for-institutions/index.jsp -text
 WebContent/for-researchers/index.jsp -text
+WebContent/for-tenant-institutions/index.jsp -text
+WebContent/for-tenant-researchers/index.jsp -text
 WebContent/forum/index.jsp -text
 WebContent/forum/presentation_tile.jsp -text
 WebContent/google-calendar/calendar.jsp -text
@@ -268,6 +271,7 @@ WebContent/search/prod.jsp -text
 WebContent/standards/index.jsp -text
 WebContent/support/index.jsp -text
 WebContent/team-creation/index.jsp -text
+WebContent/tenant-dur/index.jsp -text
 WebContent/tools/index.jsp -text
 WebContent/training/index.jsp -text
 WebContent/tutorials/index.jsp -text
