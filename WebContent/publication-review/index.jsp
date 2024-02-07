@@ -21,6 +21,10 @@
 					</strapi:publicationReviewsIntroBlockLinks>
 				</strapi:foreachPublicationReviewsIntroBlockLinks>
 				
+				<div class="col=4">
+					<a href="https://national-covid-cohort-collaborative.github.io/guide-to-n3c-v1/" class="btn btn-primary btn-n3c active" role="button" aria-pressed="true"> View The Researcher's Guide to N3C</a>
+				</div>
+
 				<h2><strapi:publicationReviewsHeader2/></h2>
 				<util:markdown2html><strapi:publicationReviewsFaqBlock1/></util:markdown2html>
 				<div class="accordion" id="faq1Accordian">

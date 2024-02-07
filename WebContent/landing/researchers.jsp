@@ -6,10 +6,13 @@
 			<util:markdown2html><strapi:landingPagesResearchers/></util:markdown2html>
 		</strapi:landingPages>
 		<div class="row flex-wrap">
-			<div class="col=6 center">
+			<div class="col=4 center">
 				<a href="for-researchers/" class="btn btn-primary btn-n3c active" role="button" aria-pressed="true">Get Started with N3C</a>
 			</div>
-			<div class="col=6 center">
+			<div class="col=4 center">
+				<a href="https://national-covid-cohort-collaborative.github.io/guide-to-n3c-v1/" class="btn btn-primary btn-n3c active" role="button" aria-pressed="true"> View The Researcher's Guide to N3C</a>
+			</div>
+			<div class="col=4 center">
 				<a href="enclave/" class="btn btn-primary btn-n3c active" role="button" aria-pressed="true">Enclave Introduction</a>
 			</div>
 		</div>
