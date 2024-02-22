@@ -271,6 +271,8 @@ WebContent/search/prod.jsp -text
 WebContent/standards/index.jsp -text
 WebContent/support/index.jsp -text
 WebContent/team-creation/index.jsp -text
+WebContent/tenant-account-instructions/index.jsp -text
+WebContent/tenant-duas/index.jsp -text
 WebContent/tenant-dur/index.jsp -text
 WebContent/tools/index.jsp -text
 WebContent/training/index.jsp -text
