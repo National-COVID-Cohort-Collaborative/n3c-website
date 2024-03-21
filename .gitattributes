@@ -54,6 +54,11 @@ WebContent/external-datasets/index.jsp -text
 WebContent/fact-sheet/index.jsp -text
 WebContent/faq/index.jsp -text
 WebContent/faqs/turndown.jsp -text
+WebContent/files/N3C_CTSA_Program_Stakeholder_Toolkit_Revised_1.11.2021b.pdf -text
+WebContent/files/N3C_Communications_Guidance_Revised-6.25.2021.pdf -text
+WebContent/files/N3C_Webpage_Builder_Tools_for_Organizations.pdf -text
+WebContent/files/NCATS_N3C_Clinical_Master_DUA.pdf -text
+WebContent/files/Newsletter_Template_for_Organizations.pdf -text
 WebContent/files/download.jsp -text
 WebContent/files/image.jsp -text
 WebContent/files/related_image.jsp -text
