@@ -41,6 +41,7 @@ WebContent/calendar/domain_teams.jsp -text
 WebContent/calendar/index.jsp -text
 WebContent/communications/index.jsp -text
 WebContent/contributors/index.jsp -text
+WebContent/covid-extension/index.jsp -text
 WebContent/dashboard-spotlight/displayDashboardThumbnail.jsp -text
 WebContent/dashboard-spotlight/displayDashboardTile.jsp -text
 WebContent/dashboard-spotlight/spotlight.jsp -text
@@ -61,6 +62,7 @@ WebContent/files/NCATS_N3C_Clinical_Master_DUA.pdf -text
 WebContent/files/Newsletter_Template_for_Organizations.pdf -text
 WebContent/files/download.jsp -text
 WebContent/files/image.jsp -text
+WebContent/files/link.jsp -text
 WebContent/files/related_image.jsp -text
 WebContent/files/related_image_pos.jsp -text
 WebContent/footer.jsp -text
