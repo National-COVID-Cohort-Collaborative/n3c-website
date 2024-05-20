@@ -11,7 +11,7 @@
 			<strapi:calendars ID="1">
 				<h1><strapi:calendarsHeader/></h1>
 			</strapi:calendars>
-			<p><iframe frameborder="0" height="800" scrolling="no" src=" https://calendar.google.com/calendar/embed?src=6l35k1j2vrhj4q167vchh1qvv8%40group.calendar.google.com&amp;ctz=America%2FLos_Angeles" style="border: 0" width="100%"></iframe></p>
+			<p><iframe class="airtable-embed" src="https://airtable.com/embed/appmqBqfXMg2SF2A1/shrYLFFYflL5mb5rm?backgroundColor=purpleLight&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="100%" style="background: transparent; border: 1px solid #ccc;"></iframe></p>
 		</div>
 		<jsp:include page="../footer.jsp" />
 	</div>
