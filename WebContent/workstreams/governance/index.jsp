@@ -15,7 +15,7 @@
 					<util:markdown2html><strapi:workstreamInstancesMissionBlock/></util:markdown2html>
 					
 					<div class="center">
-						<a href=https://uw-phi.zoom.us/webinar/register/WN_TKZ2MMcRS-ei3YtL1jbeJA" class="btn btn-primary btn-n3c active">Register for Friday Meetings</a>
+						<a href="https://n3c-info.zoom.us/meeting/register/tJckdO-pqTksHdydW7gBVTm-14MOw4WMSg6J#/registration" class="btn btn-primary btn-n3c active">Register for Friday Meetings</a>
 						<p>Fridays 7am PT/10am ET</p>
 					</div>
 					
